@@ -1,13 +1,4 @@
-#include <iostream>
-#include <list>
-#include <vector>
-#include <map>
-#include <set>
-#include <algorithm>
-#include <chrono>
-
-using namespace std;
-using ll = long long;
+#include "stdafx.h"
 
 int main()
 {

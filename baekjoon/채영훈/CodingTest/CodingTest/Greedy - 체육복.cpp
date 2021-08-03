@@ -1,9 +1,4 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <algorithm>
-
-using namespace std;
+#include "stdafx.h"
 
 int solution(int n, vector<int> lost, vector<int> reserve)
 {

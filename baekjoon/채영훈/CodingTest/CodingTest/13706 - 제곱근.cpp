@@ -1,14 +1,4 @@
-#include <iostream>
-#include <list>
-#include <vector>
-#include <map>
-#include <set>
-#include <algorithm>
-#include <chrono>
-#include "TripleLong.h"
-
-using namespace std;
-using ll = long long;
+#include "stdafx.h"
 
 int main()
 {

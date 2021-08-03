@@ -1,9 +1,4 @@
-#include <iostream>
-#include <list>
-#include <vector>
-#include <algorithm>
-
-using namespace std;
+#include "stdafx.h"
 
 int main()
 {

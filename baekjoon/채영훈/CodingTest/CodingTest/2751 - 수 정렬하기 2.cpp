@@ -1,11 +1,4 @@
-#include <iostream>
-#include <list>
-#include <vector>
-#include <set>
-#include <algorithm>
-#include <chrono>
-
-using namespace std;
+#include "stdafx.h"
 
 int main()
 {

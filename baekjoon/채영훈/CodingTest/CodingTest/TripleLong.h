@@ -10,6 +10,7 @@ public:
 	TripleLong(const string& val);
 	~TripleLong();
 
+	const bool isMinus(const TripleLong& val) const noexcept;
 	const string SetVal(const string& val);
 	const string GetVal() const;
 
@@ -31,6 +32,5 @@ public:
 private:
 public:
 private:
-	bool isMinus;
 	string val;
 };

@@ -2,24 +2,27 @@
 #include "stdafx.h"
 
 TripleLong::TripleLong()
-	: isMinus(false)
 {
 }
 
 TripleLong::TripleLong(const string& val)
-	: val(val)
 {
-	isMinus = val[0] == '-';
+	SetVal(val);
 }
 
 TripleLong::~TripleLong()
 {
 }
 
+const bool TripleLong::isMinus(const TripleLong& val) const noexcept
+{
+	if (val.val.empty()) return false;
+	else return (val.val[0] == '-');
+}
+
 const string TripleLong::SetVal(const string& val)
 {
 	this->val = val;
-	isMinus = val[0] == '-';
 	return GetVal();
 }
 

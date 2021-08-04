@@ -31,14 +31,14 @@ const string TripleLong::GetVal() const
 TripleLong& TripleLong::operator--()
 {
 	TripleLong one = TripleLong("1");
-	this->operator=(this->operator-(one));
+	this->operator-=(one);
 	return *this;
 }
 
 TripleLong& TripleLong::operator++()
 {
 	TripleLong one = TripleLong("1");
-	this->operator=(this->operator+(one));
+	this->operator+=(one);
 	return *this;
 }
 

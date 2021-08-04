@@ -13,7 +13,16 @@ public:
 	const string SetVal(const string& val);
 	const string GetVal() const;
 
+	TripleLong& operator--();
+	TripleLong& operator++();
+
+	TripleLong& operator+=(TripleLong& rhs);
+	TripleLong& operator-=(TripleLong& rhs);
+	TripleLong& operator*=(TripleLong& rhs);
+	TripleLong& operator/=(TripleLong& rhs);
+	TripleLong& operator%=(TripleLong& rhs);
 	TripleLong& operator=(const TripleLong& rhs);
+
 	TripleLong operator+(TripleLong& rhs);
 	TripleLong operator-(TripleLong& rhs);
 	TripleLong operator*(TripleLong& rhs);

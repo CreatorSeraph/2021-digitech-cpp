@@ -10,8 +10,6 @@
 #include <algorithm>
 #include <list>
 
-#include "TripleLong.h"
-
 using namespace std;
 
 using ll = long long;
@@ -27,6 +25,17 @@ vector<int> Nums(int num)
 	}
 
 	return nums;
+}
+
+vector<char> Nums(string val)
+{
+	vector<char> vals(val.size() + 1);
+
+	int index = 0;
+	for (int i = val.size() - 1; i >= 0; i--)
+		vals[index] = val[i], ++index;
+
+	return vals;
 }
 
 /// <summary>

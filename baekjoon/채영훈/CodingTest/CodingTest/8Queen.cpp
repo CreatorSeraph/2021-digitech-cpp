@@ -57,10 +57,6 @@ void Set(int i) // i는 열(세로줄)
 
 int main()
 {
-	TripleLong op1("-56");
-	TripleLong op2("-89");
-	TripleLong op3 = op1 * op2;
-
 	Set(0);
 
 	return 0;

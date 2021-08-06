@@ -1,6 +1,4 @@
-#include "TripleLong.h"
-#include <iostream>
-#include <list>
+#include "stdafx.h"
 
 // 체스판의 크기
 const int LINE = 8;

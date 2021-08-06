@@ -1,22 +1,20 @@
-#include <iostream>
+#include "stdafx.h"
 
-using namespace std;
-
-bool Nums(int num, int target, int count)
-{
-	int combo = 0;
-	while (num != 0)
-	{
-		if (target == num % 10)
-			++combo;
-		else
-			combo = 0;
-		if (combo == count)
-			return true;
-		num /= 10;
-	}
-	return false;
-}
+//bool Nums(int num, int target, int count)
+//{
+//	int combo = 0;
+//	while (num != 0)
+//	{
+//		if (target == num % 10)
+//			++combo;
+//		else
+//			combo = 0;
+//		if (combo == count)
+//			return true;
+//		num /= 10;
+//	}
+//	return false;
+//}
 
 int main()
 {

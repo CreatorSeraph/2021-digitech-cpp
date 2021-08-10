@@ -57,6 +57,9 @@
     <ClCompile Include="10829 - 이진수 변환.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11931 - 수 정렬하기 4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TripleLong.h">

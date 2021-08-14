@@ -63,6 +63,9 @@
     <ClCompile Include="11723 - 집합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="9253 - 스페셜 저지.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TripleLong.h">

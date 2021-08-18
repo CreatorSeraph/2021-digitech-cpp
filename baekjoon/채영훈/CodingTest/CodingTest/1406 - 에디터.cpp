@@ -24,17 +24,16 @@ int main()
 	string text;
 	cin >> text;
 
-	text.insert(text.begin(), ' ');
-
 	int M;
 	cin >> M;
 
 	auto cursor = text.end();
 
-	char command = '\0';
-	for (size_t i = 0; i < M; i++)
+	char command = ' ';
+	for (int i = 0; i < M; i++)
 	{
 		cin >> command;
+		cout << "input : " << command << "\n";
 		switch (command)
 		{
 		case 'L':
@@ -51,13 +50,14 @@ int main()
 			break;
 		case 'P':
 			cin >> command;
+			cout << "P input : " << command << "\n";
 			text.insert(cursor, command);
 			++cursor;
 			break;
 		}
 	}
 
-	cout << text << endl;
+	cout << text << "\n";
 
 	return 0;
 }

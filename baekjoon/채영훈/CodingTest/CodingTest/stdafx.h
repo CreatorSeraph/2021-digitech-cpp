@@ -7,6 +7,8 @@
 #include <chrono>
 #include <set>
 #include <map>
+#include <unordered_map>
+#include <unordered_set>
 #include <algorithm>
 #include <list>
 
@@ -14,6 +16,8 @@ using namespace std;
 
 using ll = long long;
 using ul = unsigned long;
+using mc_cp = map<char, char*>;
+using mc_pc_c = map<char, pair<char, char>>;
 
 #define async_with_stdio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
 

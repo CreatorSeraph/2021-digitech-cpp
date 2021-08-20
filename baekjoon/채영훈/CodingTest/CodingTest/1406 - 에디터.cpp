@@ -22,42 +22,42 @@ int main()
 	async_with_stdio;
 
 	string text;
+	list<char> lc;
 	cin >> text;
+
+	for_each(text.begin(), text.end(), [&lc](auto& val) {lc.emplace_back(val); });
 
 	int M;
 	cin >> M;
 
-	auto cursor = text.end();
+	auto cursor = lc.end();
 
 	char command = ' ';
 	for (int i = 0; i < M; i++)
 	{
 		cin >> command;
-		cout << "input : " << command << "\n";
 		switch (command)
 		{
 		case 'L':
-			if (cursor != text.begin())
+			if (cursor != lc.begin())
 				--cursor;
 			break;
 		case 'D':
-			if (cursor != text.end())
+			if (cursor != lc.end())
 				++cursor;
 			break;
 		case 'B':
-			if (cursor != text.begin())
-				text.erase(--cursor);
+			if (cursor != lc.begin())
+				cursor = lc.erase(--cursor);
 			break;
 		case 'P':
 			cin >> command;
-			cout << "P input : " << command << "\n";
-			text.insert(cursor, command);
-			++cursor;
+			lc.insert(cursor, command);
 			break;
 		}
 	}
 
-	cout << text << "\n";
+	for_each(lc.begin(), lc.end(), [](auto& val) { cout << val; });
 
 	return 0;
 }

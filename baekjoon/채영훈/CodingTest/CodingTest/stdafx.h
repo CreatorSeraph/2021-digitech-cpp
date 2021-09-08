@@ -17,7 +17,8 @@ using namespace std;
 using ll = long long;
 using ul = unsigned long;
 using mc_cp = map<char, char*>;
-using mc_pc_c = map<char, pair<char, char>>;
+using mc_pc_c = map<char, pc_c>;
+using pc_c = pair<char, char>;
 using pi_s = pair<int, string>;
 using pi_i = pair<int, int>;
 

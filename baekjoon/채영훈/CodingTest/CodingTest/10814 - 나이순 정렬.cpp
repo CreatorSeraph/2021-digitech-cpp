@@ -35,6 +35,7 @@ int main()
 	cin >> N;
 
 	vector<pi_s> v;
+	v.reserve(N);
 
 	for (size_t i = 0; i < N; i++)
 	{

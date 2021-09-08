@@ -18,6 +18,8 @@ using ll = long long;
 using ul = unsigned long;
 using mc_cp = map<char, char*>;
 using mc_pc_c = map<char, pair<char, char>>;
+using pi_s = pair<int, string>;
+using pi_i = pair<int, int>;
 
 #define async_with_stdio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
 

@@ -75,6 +75,9 @@
     <ClCompile Include="1620 - 나는야 포켓몬 마스터 이다솜.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10814 - 나이순 정렬.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TripleLong.h">

@@ -45,7 +45,7 @@ int main()
 
 	stable_sort(v.begin(), v.end(), Compare);
 
-	for_each(v.begin(), v.end(), [](pi_s& p) { cout << p.first << " " << p.second << endl; });
+	for_each(v.begin(), v.end(), [](pi_s& p) { cout << p.first << " " << p.second << "\n"; });
 
 	return 0;
 }

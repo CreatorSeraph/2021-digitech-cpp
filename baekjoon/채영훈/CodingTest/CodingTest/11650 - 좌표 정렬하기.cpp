@@ -30,6 +30,8 @@ bool Compare(const pi_i& a, const pi_i& b)
 
 int main()
 {
+	async_with_stdio;
+
 	int N;
 	cin >> N;
 
@@ -45,7 +47,7 @@ int main()
 
 	stable_sort(v.begin(), v.end(), Compare);
 
-	for_each(v.begin(), v.end(), [](pi_i& p) { cout << p.first << " " << p.second << endl; });
+	for_each(v.begin(), v.end(), [](pi_i& p) { cout << p.first << " " << p.second << "\n"; });
 
 	return 0;
 }

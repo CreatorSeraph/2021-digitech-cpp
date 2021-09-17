@@ -66,28 +66,7 @@
     <ClCompile Include="9253 - 스페셜 저지.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1406 - 에디터.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1991 - 트리 순회.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1620 - 나는야 포켓몬 마스터 이다솜.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10814 - 나이순 정렬.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11650 - 좌표 정렬하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1629 - 곱셈.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1003 - 피보나치 함수.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1157 - 단어 공부.cpp">
+    <ClCompile Include="2108 - 통계학.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

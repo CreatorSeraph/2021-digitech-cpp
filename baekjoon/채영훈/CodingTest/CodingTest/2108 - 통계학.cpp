@@ -16,13 +16,14 @@ int main()
 	cin >> N;
 	vector<int> v(N);
 
+	float sum = 0;
+
 	for (int i = 0; i < N; ++i)
 	{
 		cin >> v[i];
+		sum += v[i];
 	}
-
-	float sum = 0;
-	for_each(v.begin(), v.end(), [&sum](int val) {sum += val; });
+	
 	cout << round(sum / N) << "\n";
 
 	//////////////////////////////////////////////////////////////////////////////////////////////
@@ -33,32 +34,24 @@ int main()
 	//////////////////////////////////////////////////////////////////////////////////////////////
 
 	map<int, int> m;
-	for_each(v.begin(), v.end(), [&m](int val) {m[val]++; });
+	for_each(v.begin(), v.end(), [&m](int val) { ++m[val]; });
 	vector<pair<int, int>> v_pair;
-	for_each(m.begin(), m.end(), [&v_pair](const pair<int, int> p) { v_pair.push_back({ p.first,p.second }); });
-	stable_sort(v_pair.begin(), v_pair.end(), [](const pair<int, int> a, const pair<int, int> b)
-		{
-			if (a.second > b.second)
-				return true;
-			else if (a.second == b.second && a.first < b.first)
-				return true;
-			return false;
-		});
+	for_each(m.begin(), m.end(), [&v_pair](auto& p) { v_pair.push_back({ p.first,p.second }); });
+	stable_sort(v_pair.begin(), v_pair.end(), [](auto& a, auto& b) { return a.second > b.second; });
 
-	if (v_pair.size() > 1)
-		cout << v_pair[1].first << "\n";
-	else
-		cout << v_pair[0].first << "\n";
+	if (m.size() > 1) cout << v_pair[1].first << "\n";
+	else cout << v_pair[0].first << "\n";
 
 	//////////////////////////////////////////////////////////////////////////////////////////////
 
 	int min_val = 4001, max_val = -4001;
-	for_each(v.begin(), v.end(), [&min_val, &max_val](int val) {min_val = min(val, min_val); max_val = max(val, max_val); });
-
-	if (min_val != max_val)
-		cout << abs(min_val - max_val) << "\n";
-	else
-		cout << "0\n";
+	for_each(v.begin(), v.end(), [&min_val, &max_val](int val)
+		{
+			if (min_val > val) min_val = val;
+			if (max_val < val) max_val = val;
+		});
+	
+	cout << max_val - min_val << "\n";
 
 	return 0;
 }

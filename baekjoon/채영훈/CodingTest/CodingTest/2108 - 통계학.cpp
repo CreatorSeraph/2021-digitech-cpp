@@ -15,13 +15,15 @@ int main()
 	int N;
 	cin >> N;
 	vector<int> v(N);
+	vector<int> appear(8001);
 
-	float sum = 0;
+	double sum = 0;
 
 	for (int i = 0; i < N; ++i)
 	{
 		cin >> v[i];
 		sum += v[i];
+		++appear[v[i] + 4000];
 	}
 
 	cout << round(sum / N) << "\n";
@@ -33,38 +35,31 @@ int main()
 
 	//////////////////////////////////////////////////////////////////////////////////////////////
 
-	map<int, int> m;
-	for_each(v.begin(), v.end(), [&m](int val) { ++m[val]; });
-	vector<pair<int, int>> vp;
-	for_each(m.begin(), m.end(), [&vp](auto& val) { vp.push_back({ val.first,val.second }); });
-	stable_sort(vp.begin(), vp.end(), [](auto& a, auto& b) 
-		{ 
-			return a.second > b.second;
-		});
-	int max_val = -4001;
-	for (auto& [key, val] : vp)
+	//   idx  appear
+	pair<int, int> first = { 0,0 };
+	pair<int, int> second = { 0,0 };
+
+	for (int i = 0; i < appear.size(); i++)
 	{
-		if (max_val < val)
+		if (first.second < appear[i])
 		{
-			vp.clear();
-			max_val = val;
+			second = first;
+			first = { i - 4000,appear[i] };
 		}
-		if (max_val == val) vp.push_back({ key,val });
+		else if (second.second < appear[i] && appear[i] <= first.second)
+		{
+			second = { i - 4000,appear[i] };
+		}
 	}
-	if (vp.size() > 1) cout << vp[1].first << "\n";
-	else cout << vp[0].first << "\n";
+
+	if (second.second != 0)
+		cout << second.first << "\n";
+	else
+		cout << first.first << "\n";
 
 	//////////////////////////////////////////////////////////////////////////////////////////////
 
-	int min_val = 4001;
-	max_val = -4001;
-	for_each(v.begin(), v.end(), [&min_val, &max_val](int val)
-		{
-			if (min_val > val) min_val = val;
-			if (max_val < val) max_val = val;
-		});
-
-	cout << max_val - min_val << "\n";
+	cout << v[v.size() - 1] - v[0] << "\n";
 
 	return 0;
 }

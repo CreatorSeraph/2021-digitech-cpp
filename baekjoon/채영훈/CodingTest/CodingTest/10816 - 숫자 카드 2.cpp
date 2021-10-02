@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stack>
 #include <string>
-#include <hash_map>
+#include <unordered_map>
 
 using namespace std;
 
@@ -17,14 +17,14 @@ int main()
 
 	cin >> N;
 
-	hash_map<int, int> h;
+	unordered_map<int, int> um;
 
 	int in;
 
 	for (int i = 0; i < N; i++)
 	{
 		cin >> in;
-		++h[in];
+		++um[in];
 	}
 
 	cin >> M;
@@ -32,7 +32,7 @@ int main()
 	for (int i = 0; i < M; i++)
 	{
 		cin >> in;
-		cout << h[in] << sp;
+		cout << um[in] << sp;
 	}
 
 	return 0;

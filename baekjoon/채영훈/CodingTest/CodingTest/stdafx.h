@@ -14,15 +14,10 @@
 
 using namespace std;
 
-using ll = long long;
-using ul = unsigned long;
-using mc_cp = map<char, char*>;
-using pc_c = pair<char, char>;
-using mc_pc_c = map<char, pc_c>;
-using pi_s = pair<int, string>;
-using pi_i = pair<int, int>;
-
 #define async_with_stdio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+
+constexpr auto nl = '\n';
+constexpr auto sp = ' ';
 
 vector<int> Nums(int num)
 {

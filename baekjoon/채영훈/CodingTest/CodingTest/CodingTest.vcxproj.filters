@@ -84,6 +84,21 @@
     <ClCompile Include="2675 - 문자열 반복.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1011 - Fly me to the Alpha Centauri.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10828 - 스택.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10845 - 큐.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10866 - 덱.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11866 - 요세푸스 문제 0.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TripleLong.h">

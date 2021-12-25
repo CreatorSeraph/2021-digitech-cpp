@@ -1,20 +1,38 @@
-#include "stdafx.h"
+#include <iostream>
+#include <vector>
+#include <numeric>
+#include <iostream>
+#include <string>
+#include <chrono>
+#include <set>
+#include <map>
+#include <unordered_map>
+#include <unordered_set>
+#include <algorithm>
+#include <list>
 
-//bool Nums(int num, int target, int count)
-//{
-//	int combo = 0;
-//	while (num != 0)
-//	{
-//		if (target == num % 10)
-//			++combo;
-//		else
-//			combo = 0;
-//		if (combo == count)
-//			return true;
-//		num /= 10;
-//	}
-//	return false;
-//}
+using namespace std;
+
+#define async_with_stdio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
+constexpr auto nl = '\n';
+constexpr auto sp = ' ';
+constexpr auto tab = '\t';
+
+bool Nums(int num, int target, int count)
+{
+	int combo = 0;
+	while (num != 0)
+	{
+		if (target == num % 10)
+			++combo;
+		else
+			combo = 0;
+		if (combo == count)
+			return true;
+		num /= 10;
+	}
+	return false;
+}
 
 int main()
 {

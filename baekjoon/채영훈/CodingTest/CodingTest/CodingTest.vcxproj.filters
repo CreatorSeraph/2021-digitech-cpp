@@ -120,6 +120,9 @@
     <ClCompile Include="1676 - 팩토리얼 0의 개수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1764 - 듣보잡.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TripleLong.h">

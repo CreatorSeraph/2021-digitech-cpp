@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
+#include <array>
 #include <list>
+#include <queue>
 #include <algorithm>
 #include <cmath>
 #include <map>
@@ -18,6 +20,31 @@ constexpr auto tab = '\t';
 int main()
 {
 	async_with_stdio;
+
+	int T;
+	cin >> T;
+
+	int N, M;
+
+	for (size_t i = 0; i < T; i++)
+	{
+		cin >> N >> M;
+
+		if (N == 1)
+		{
+			cout << 1 << nl;
+			continue;
+		}
+
+		list<int> l;
+
+		for (size_t j = 0; j < N; j++)
+		{
+			l.push_back(j);
+		}
+
+
+	}
 
 	return 0;
 }

@@ -8,8 +8,6 @@
 
 using namespace std;
 
-using ll = long long;
-
 #define async_with_stdio ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);
 constexpr auto nl = '\n';
 constexpr auto sp = ' ';

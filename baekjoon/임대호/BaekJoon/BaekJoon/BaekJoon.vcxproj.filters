@@ -13,31 +13,25 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Fibonacci">
-      <UniqueIdentifier>{159c3b48-8fff-419b-bc93-19446b75f0d1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Sort">
-      <UniqueIdentifier>{39d673f5-7bc9-4ead-86c0-52c3569473b2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="10162 전자레인지">
-      <UniqueIdentifier>{4ef519ad-bf31-4c3d-8263-b3210cdba931}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="2720 세탁소">
-      <UniqueIdentifier>{9ba299dc-46b2-4f96-ae2e-e4f66aa9ccfa}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Fibonacci.cpp">
-      <Filter>Fibonacci</Filter>
+    <ClCompile Include="1018 체스판 다시 칠하기.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="sort.cpp">
-      <Filter>Sort</Filter>
+    <ClCompile Include="template.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11866 요세푸스 문제 0.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="10162 전자레인지.cpp">
-      <Filter>10162 전자레인지</Filter>
+      <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="2720 세탁소.cpp">
-      <Filter>2720 세탁소</Filter>
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9012 괄호.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

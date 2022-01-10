@@ -15,5 +15,7 @@ constexpr auto tab = '\t';
 
 int main()
 {
+	async_with_stdio;
+
 	return 0;
 }

@@ -32,8 +32,17 @@ void Set(const char* p)
 		memcpy(origin, p, pSize);
 }
 
+#define ARR_SIZE 100
+
 int main()
 {
+	enum eSIZE
+	{
+		SIZE = 100,
+	};
+
+	int arr[ARR_SIZE];
+
 	int num1 = 3;   
 	int num2 = 24;
 

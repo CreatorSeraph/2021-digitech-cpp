@@ -1,6 +1,10 @@
 #include <iostream>
 #include <vector>
+#include <list>
+#include <algorithm>
 #include <cmath>
+#include <map>
+#include <unordered_map>
 
 using namespace std;
 
@@ -9,26 +13,22 @@ constexpr auto nl = '\n';
 constexpr auto sp = ' ';
 constexpr auto tab = '\t';
 
-int* dp = nullptr;
-
 int main()
 {
+	async_with_stdio;
+
 	int N;
 	cin >> N;
 
 	vector<int> dp(N + 1, 0);
-	dp[1] = 1;
+	vector<int> v(N + 1, 0);
 
-	int temp;
-	for (int i = 2; i <= N; i++)
+	for (int i = 1; i < N + 1; i++)
 	{
-		temp = dp[i - 1] + 1;
-		for (int j = 1; j * j <= i; j++)
-		{
-			temp = min(temp, dp[i - j * j]);
-		}
-		dp[i] = temp + 1;
+		cin >> v[i];
 	}
+
+
 
 	cout << dp[N] << nl;
 

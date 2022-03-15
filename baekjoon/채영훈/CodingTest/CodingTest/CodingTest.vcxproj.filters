@@ -144,6 +144,18 @@
     <ClCompile Include="PerlinNoise.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="12852 - 1로 만들기 2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2579 - 계단 오르기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="24678 - 돌무더기 게임 1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="24679 - 돌무더기 게임 2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TripleLong.h">

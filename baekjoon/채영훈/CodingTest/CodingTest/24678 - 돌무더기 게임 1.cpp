@@ -13,26 +13,28 @@ constexpr auto nl = '\n';
 constexpr auto sp = ' ';
 constexpr auto tab = '\t';
 
-int dp[10000001];
-
 int main()
 {
 	async_with_stdio;
 
-	int N;
-	cin >> N;
+	int T;
+	cin >> T;
 
-	dp[1] = 0;
-	for (size_t i = 2; i <= N; i++)
+	int x, y, z, even;
+
+	for (size_t i = 0; i < T; i++)
 	{
-		dp[i] = dp[i - 1] + 1;
-		if (i % 3 == 0)
-			dp[i] = min(dp[i], dp[i / 3] + 1);
-		if (i % 2 == 0)
-			dp[i] = min(dp[i], dp[i / 2] + 1);
-	}
+		cin >> x >> y >> z;
 
-	cout << dp[N] << nl;
+		even = 0;
+
+		if (x % 2 == 0) even++;
+		if (y % 2 == 0) even++;
+		if (z % 2 == 0) even++;
+
+		if (even >= 2) cout << "R" << nl;
+		else cout << "B" << nl;
+	}
 
 	return 0;
 }

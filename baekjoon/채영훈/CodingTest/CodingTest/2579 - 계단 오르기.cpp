@@ -24,11 +24,14 @@ int main()
 	vector<int> v(N + 1, 0);
 
 	for (int i = 1; i < N + 1; i++)
-	{
 		cin >> v[i];
-	}
 
+	dp[1] = v[1];
+	dp[2] = v[1] + v[2];
+	dp[3] = max(v[1], v[2]) + v[3];
 
+	for (size_t i = 4; i < N + 1; i++)
+		dp[i] = max(v[i] + dp[i - 2], v[i] + v[i - 1] + dp[i - 3]);
 
 	cout << dp[N] << nl;
 

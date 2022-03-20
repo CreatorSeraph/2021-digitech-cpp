@@ -22,12 +22,29 @@ int main()
 
 	vector<int> v(3);
 
+	unsigned long long sum = 0, div = 0;
+
 	for (size_t i = 0; i < T; i++)
 	{
 		cin >> v[0] >> v[1] >> v[2];
 
 		sort(v.begin(), v.end());
 
+		sum += v[0] + v[1] + v[2];
+
+		if (sum % 2 == 0)
+		{
+			sum -= 2;
+			div = sum / 2;
+		}
+		else
+		{
+			sum -= 3;
+			div = sum / 2;
+		}
+
+		if (div % 2 == 0) cout << "R" << nl;
+		else cout << "B" << nl;
 	}
 
 	return 0;

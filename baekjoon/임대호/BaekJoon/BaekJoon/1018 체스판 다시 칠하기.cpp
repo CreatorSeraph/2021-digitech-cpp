@@ -6,7 +6,7 @@
 #include <list>
 using namespace std;
 
-int 체스판다시칠하기()
+int main()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
@@ -70,7 +70,7 @@ int 체스판다시칠하기()
 			}
 		}
 	}
-	 
+	  
 	cout << (re_coloring_count < c_re_coloring_count ? re_coloring_count : c_re_coloring_count);
 
 	return 0;

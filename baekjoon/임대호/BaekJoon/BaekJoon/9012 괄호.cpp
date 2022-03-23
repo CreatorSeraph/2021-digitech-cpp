@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stack>
 using namespace std;
-int main()
+int °ýÈ£()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);

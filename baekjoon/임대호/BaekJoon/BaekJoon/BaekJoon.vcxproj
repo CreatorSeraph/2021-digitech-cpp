@@ -141,8 +141,10 @@
   <ItemGroup>
     <ClCompile Include="10162 전자레인지.cpp" />
     <ClCompile Include="1018 체스판 다시 칠하기.cpp" />
+    <ClCompile Include="1181 단어 정렬.cpp" />
     <ClCompile Include="11866 요세푸스 문제 0.cpp" />
     <ClCompile Include="16135 OBB %28Object bounding box.cpp" />
+    <ClCompile Include="1764 듣보잡.cpp" />
     <ClCompile Include="2720 세탁소.cpp" />
     <ClCompile Include="9012 괄호.cpp" />
     <ClCompile Include="template.cpp" />

@@ -6,7 +6,7 @@
 #include <list>
 using namespace std;
 
-int main()
+int 체스판다시칠하기()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);

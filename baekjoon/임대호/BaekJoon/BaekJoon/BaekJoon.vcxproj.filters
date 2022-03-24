@@ -36,5 +36,11 @@
     <ClCompile Include="16135 OBB %28Object bounding box.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1764 듣보잡.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1181 단어 정렬.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

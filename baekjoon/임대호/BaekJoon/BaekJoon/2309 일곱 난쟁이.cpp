@@ -3,7 +3,7 @@
 #include <algorithm>
 
 using namespace std;
-int main()
+int ÀÏ°ö³­ÀïÀÌ()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);

@@ -48,5 +48,17 @@
     <ClCompile Include="2309 일곱 난쟁이.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="5576 콘테스트.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9076 점수 집계.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6996 애너그램.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1427 소트인사이드.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

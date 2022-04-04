@@ -2,7 +2,7 @@
 #include <algorithm>
 
 using namespace std;
-int main()
+int 소트인사이드()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);

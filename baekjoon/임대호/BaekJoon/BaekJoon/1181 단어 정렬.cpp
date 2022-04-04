@@ -3,41 +3,66 @@
 #include <map>
 #include <algorithm>
 
+// 시간초과 응애.. 병합정렬 ㄱ
+
 using namespace std;
 
 vector<string> vec;
 
-void Sort(int start, int end)
+void M_Sort(vector<string> s_vec, int start, int end)
 {
-	if (start > end) return;
+	if (s_vec.size() <= 1) return;
+
+}
+
+void Q_Sort(int start, int end)
+{
+	if (start >= end) return;
+
+	int left = start;
+	int right = end;
+	int pivot = start;
 
 	string temp;
 
-	int pivot = start;
-	int left = start;
-	int right = end;
-
 	while (left < right)
 	{
-		while ((vec[left].size() <= vec[pivot].size() &&
-			(vec[left].size() != vec[pivot].size() && (vec[left] <= vec[pivot]))) && left < end) left++;
-		while ((vec[right].size() >= vec[pivot].size() &&
-			(vec[right].size() != vec[pivot].size() && (vec[right] <= vec[pivot]))) && right > start) right--;
+		while (left < right && vec[right].size() >= vec[left].size())
+		{
+			if (vec[right].size() == vec[left].size() && vec[right] < vec[left])
+			{
+				temp = vec[right];
+				vec[right] = vec[left];
+				vec[left] = temp;
+			}
+			else
+				left++;
+		}
+		while (right > left && vec[left].size() <= vec[right].size())
+		{
+			if (vec[left].size() == vec[right].size() && vec[left] > vec[right])
+			{
+				temp = vec[left];
+				vec[left] = vec[right];
+				vec[right] = temp;
+			}
+			else
+				right--;
+		}
 
 		if (left < right)
 		{
-			temp = vec[left];
-			vec[left] = vec[right];
-			vec[right] = temp;
+			temp = vec[right];
+			vec[right] = vec[left];
+			vec[left] = temp;
 		}
 	}
-
 	temp = vec[right];
-	vec[right] = vec[pivot];
-	vec[pivot] = temp;
+	vec[right] = vec[left];
+	vec[left] = temp;
 
-	Sort(start, pivot - 1);
-	Sort(pivot + 1, end);
+	Q_Sort(start, right - 1);
+	Q_Sort(right + 1, end);
 }
 
 int main()
@@ -63,9 +88,7 @@ int main()
 		}
 	}
 
-	Sort(0, vec.size() - 1);
-
-	cout << '\n';
+	Q_Sort(0, vec.size() - 1);
 
 	for (auto iter : vec)
 	{

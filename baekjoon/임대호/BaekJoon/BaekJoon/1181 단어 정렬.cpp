@@ -107,7 +107,7 @@ void MergeSort(int start, int end)
 }
 */
 
-int main()
+int 단어정렬()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);

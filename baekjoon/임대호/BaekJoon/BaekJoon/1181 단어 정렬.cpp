@@ -3,19 +3,60 @@
 #include <map>
 #include <algorithm>
 
-// 시간초과 응애.. 병합정렬 ㄱ
-
 using namespace std;
 
 vector<string> vec;
 
-void M_Sort(vector<string> s_vec, int start, int end)
+void M_Sort(int start, int end)
 {
-	if (s_vec.size() <= 1) return;
+	vector<string> _vec(vec.size());
+	int mid = (start + end) / 2;
+	int left = start;
+	int right = mid + 1;
+	int index = start;
 
+	while (left <= mid && right <= end)
+	{
+		if (vec[left].size() < vec[right].size())
+			_vec[index] = vec[left++];
+		else
+		{
+			if (vec[left].size() == vec[right].size())
+			{
+				if (vec[left] > vec[right]) _vec[index] = vec[right++];
+				else _vec[index] = vec[left++];
+			}
+			else
+			_vec[index] = vec[right++];
+		}
+
+		index++;
+	}
+
+	if (left > mid)
+		while (right <= end)
+			_vec[index++] = vec[right++];
+
+	if (right > end)
+		while (left <= mid)
+			_vec[index++] = vec[left++];
+
+	for (int i = start; i <= end; i++)
+		vec[i] = _vec[i];
 }
 
-void Q_Sort(int start, int end)
+void MergeSort(int start, int end)
+{
+	if (start >= end) return;
+
+	int mid = (start + end) / 2;
+
+	MergeSort(start, mid);
+	MergeSort(mid + 1, end);
+	M_Sort(start, end);
+}
+
+/* void Q_Sort(int start, int end)
 {
 	if (start >= end) return;
 
@@ -64,6 +105,7 @@ void Q_Sort(int start, int end)
 	Q_Sort(start, right - 1);
 	Q_Sort(right + 1, end);
 }
+*/
 
 int main()
 {
@@ -88,7 +130,7 @@ int main()
 		}
 	}
 
-	Q_Sort(0, vec.size() - 1);
+	MergeSort(0, vec.size() - 1);
 
 	for (auto iter : vec)
 	{

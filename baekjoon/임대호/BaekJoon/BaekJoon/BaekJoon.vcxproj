@@ -139,6 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1009 분산처리.cpp" />
+    <ClCompile Include="1010 다리 놓기.cpp" />
     <ClCompile Include="10162 전자레인지.cpp" />
     <ClCompile Include="1018 체스판 다시 칠하기.cpp" />
     <ClCompile Include="1181 단어 정렬.cpp" />

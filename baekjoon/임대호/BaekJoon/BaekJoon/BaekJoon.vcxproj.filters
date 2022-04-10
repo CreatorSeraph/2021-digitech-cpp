@@ -63,7 +63,13 @@
     <ClCompile Include="1009 분산처리.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="1010 다리 놓기.cpp">
+    <ClCompile Include="11034 캥거루 3마리2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="14720 우유 축제.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2605 줄 세우기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

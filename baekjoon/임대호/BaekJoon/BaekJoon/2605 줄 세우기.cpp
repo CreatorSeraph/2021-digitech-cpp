@@ -2,7 +2,7 @@
 #include <list>
 
 using namespace std;
-int main()
+int 줄세우기()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);

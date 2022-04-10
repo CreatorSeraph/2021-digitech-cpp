@@ -56,57 +56,6 @@ void MergeSort(int start, int end)
 	M_Sort(start, end);
 }
 
-/* void Q_Sort(int start, int end)
-{
-	if (start >= end) return;
-
-	int left = start;
-	int right = end;
-	int pivot = start;
-
-	string temp;
-
-	while (left < right)
-	{
-		while (left < right && vec[right].size() >= vec[left].size())
-		{
-			if (vec[right].size() == vec[left].size() && vec[right] < vec[left])
-			{
-				temp = vec[right];
-				vec[right] = vec[left];
-				vec[left] = temp;
-			}
-			else
-				left++;
-		}
-		while (right > left && vec[left].size() <= vec[right].size())
-		{
-			if (vec[left].size() == vec[right].size() && vec[left] > vec[right])
-			{
-				temp = vec[left];
-				vec[left] = vec[right];
-				vec[right] = temp;
-			}
-			else
-				right--;
-		}
-
-		if (left < right)
-		{
-			temp = vec[right];
-			vec[right] = vec[left];
-			vec[left] = temp;
-		}
-	}
-	temp = vec[right];
-	vec[right] = vec[left];
-	vec[left] = temp;
-
-	Q_Sort(start, right - 1);
-	Q_Sort(right + 1, end);
-}
-*/
-
 int 단어정렬()
 {
 	cin.tie(nullptr);

@@ -1,9 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <map>
-#include <algorithm>
-
-// 시간초과 응애.. 병합정렬 ㄱ
 
 using namespace std;
 

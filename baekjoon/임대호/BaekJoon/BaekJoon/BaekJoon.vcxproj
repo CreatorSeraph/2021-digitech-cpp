@@ -142,6 +142,8 @@
     <ClCompile Include="1009 분산처리.cpp" />
     <ClCompile Include="10162 전자레인지.cpp" />
     <ClCompile Include="1018 체스판 다시 칠하기.cpp" />
+    <ClCompile Include="10814 나이순 정렬.cpp" />
+    <ClCompile Include="10816 숫자 카드 2.cpp" />
     <ClCompile Include="11034 캥거루 3마리2.cpp" />
     <ClCompile Include="11650 좌표 정렬하기.cpp" />
     <ClCompile Include="1181 단어 정렬.cpp" />
@@ -151,9 +153,12 @@
     <ClCompile Include="14720 우유 축제.cpp" />
     <ClCompile Include="16135 OBB %28Object bounding box.cpp" />
     <ClCompile Include="1764 듣보잡.cpp" />
+    <ClCompile Include="1920 수 찾기.cpp" />
+    <ClCompile Include="1978 소수 찾기.cpp" />
     <ClCompile Include="2164 카드2.cpp" />
     <ClCompile Include="2309 일곱 난쟁이.cpp" />
     <ClCompile Include="2605 줄 세우기.cpp" />
+    <ClCompile Include="2609 최대공약수와 최소공배수.cpp" />
     <ClCompile Include="2720 세탁소.cpp" />
     <ClCompile Include="5576 콘테스트.cpp" />
     <ClCompile Include="6996 애너그램.cpp" />

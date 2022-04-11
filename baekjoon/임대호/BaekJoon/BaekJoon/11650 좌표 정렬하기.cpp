@@ -10,13 +10,13 @@ public:
 	int y;
 };
 
-void Merge(int start, int mid, int end);
-void MergeSorting(int start, int end);
+void _Merge(int start, int mid, int end);
+void _MergeSorting(int start, int end);
 
 vector<Vector2> v;
 vector<Vector2> _vec;
 
-int main()
+int 좌표정렬하기()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
@@ -39,7 +39,7 @@ int main()
 		v[i] = vec2;
 	}
 
-	MergeSorting(0, n - 1);
+	_MergeSorting(0, n - 1);
 
 	for (int i = 0; i < n; i++)
 	{
@@ -49,7 +49,7 @@ int main()
 	return 0;
 }
 
-void Merge(int start, int mid, int end)
+void _Merge(int start, int mid, int end)
 {
 	int left = start;
 	int right = mid + 1;
@@ -89,13 +89,13 @@ void Merge(int start, int mid, int end)
 		v[i] = _vec[i];
 }
 
-void MergeSorting(int start, int end)
+void _MergeSorting(int start, int end)
 {
 	if (start >= end) return;
 
 	int mid = (end + start) / 2;
 
-	MergeSorting(start, mid);
-	MergeSorting(mid + 1, end);
-	Merge(start, mid, end);
+	_MergeSorting(start, mid);
+	_MergeSorting(mid + 1, end);
+	_Merge(start, mid, end);
 }

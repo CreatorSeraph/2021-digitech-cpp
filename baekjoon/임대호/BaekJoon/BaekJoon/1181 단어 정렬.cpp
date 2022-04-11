@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <map>
-#include <algorithm>
 
 using namespace std;
 
@@ -45,14 +44,14 @@ void M_Sort(int start, int end)
 		vec[i] = _vec[i];
 }
 
-void MergeSort(int start, int end)
+void Merge__Sort(int start, int end)
 {
 	if (start >= end) return;
 
 	int mid = (start + end) / 2;
 
-	MergeSort(start, mid);
-	MergeSort(mid + 1, end);
+	Merge__Sort(start, mid);
+	Merge__Sort(mid + 1, end);
 	M_Sort(start, end);
 }
 
@@ -79,7 +78,7 @@ int 단어정렬()
 		}
 	}
 
-	MergeSort(0, vec.size() - 1);
+	Merge__Sort(0, vec.size() - 1);
 
 	for (auto iter : vec)
 	{

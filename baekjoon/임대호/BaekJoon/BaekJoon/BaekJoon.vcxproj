@@ -113,7 +113,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
@@ -139,15 +139,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1009 분산처리.cpp" />
     <ClCompile Include="10162 전자레인지.cpp" />
     <ClCompile Include="1018 체스판 다시 칠하기.cpp" />
+    <ClCompile Include="11034 캥거루 3마리2.cpp" />
+    <ClCompile Include="11650 좌표 정렬하기.cpp" />
     <ClCompile Include="1181 단어 정렬.cpp" />
     <ClCompile Include="11866 요세푸스 문제 0.cpp" />
+    <ClCompile Include="13771 Presents.cpp" />
+    <ClCompile Include="1427 소트인사이드.cpp" />
+    <ClCompile Include="14720 우유 축제.cpp" />
     <ClCompile Include="16135 OBB %28Object bounding box.cpp" />
     <ClCompile Include="1764 듣보잡.cpp" />
+    <ClCompile Include="2164 카드2.cpp" />
+    <ClCompile Include="2309 일곱 난쟁이.cpp" />
+    <ClCompile Include="2605 줄 세우기.cpp" />
     <ClCompile Include="2720 세탁소.cpp" />
+    <ClCompile Include="5576 콘테스트.cpp" />
+    <ClCompile Include="6996 애너그램.cpp" />
     <ClCompile Include="9012 괄호.cpp" />
+    <ClCompile Include="9946 단어 퍼즐.cpp" />
     <ClCompile Include="template.cpp" />
+    <ClCompile Include="9076 점수 집계.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,68 +1,62 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <algorithm>
 
 using namespace std;
 
 vector<string> vec;
 
-void M_Sort(vector<string> s_vec, int start, int end)
+void M_Sort(int start, int end)
 {
-	if (s_vec.size() <= 1) return;
+	vector<string> _vec(vec.size());
+	int mid = (start + end) / 2;
+	int left = start;
+	int right = mid + 1;
+	int index = start;
 
+	while (left <= mid && right <= end)
+	{
+		if (vec[left].size() < vec[right].size())
+			_vec[index] = vec[left++];
+		else
+		{
+			if (vec[left].size() == vec[right].size())
+			{
+				if (vec[left] > vec[right]) _vec[index] = vec[right++];
+				else _vec[index] = vec[left++];
+			}
+			else
+			_vec[index] = vec[right++];
+		}
+
+		index++;
+	}
+
+	if (left > mid)
+		while (right <= end)
+			_vec[index++] = vec[right++];
+
+	if (right > end)
+		while (left <= mid)
+			_vec[index++] = vec[left++];
+
+	for (int i = start; i <= end; i++)
+		vec[i] = _vec[i];
 }
 
-void Q_Sort(int start, int end)
+void MergeSort(int start, int end)
 {
 	if (start >= end) return;
 
-	int left = start;
-	int right = end;
-	int pivot = start;
+	int mid = (start + end) / 2;
 
-	string temp;
-
-	while (left < right)
-	{
-		while (left < right && vec[right].size() >= vec[left].size())
-		{
-			if (vec[right].size() == vec[left].size() && vec[right] < vec[left])
-			{
-				temp = vec[right];
-				vec[right] = vec[left];
-				vec[left] = temp;
-			}
-			else
-				left++;
-		}
-		while (right > left && vec[left].size() <= vec[right].size())
-		{
-			if (vec[left].size() == vec[right].size() && vec[left] > vec[right])
-			{
-				temp = vec[left];
-				vec[left] = vec[right];
-				vec[right] = temp;
-			}
-			else
-				right--;
-		}
-
-		if (left < right)
-		{
-			temp = vec[right];
-			vec[right] = vec[left];
-			vec[left] = temp;
-		}
-	}
-	temp = vec[right];
-	vec[right] = vec[left];
-	vec[left] = temp;
-
-	Q_Sort(start, right - 1);
-	Q_Sort(right + 1, end);
+	MergeSort(start, mid);
+	MergeSort(mid + 1, end);
+	M_Sort(start, end);
 }
 
-int main()
+int 단어정렬()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
@@ -85,7 +79,7 @@ int main()
 		}
 	}
 
-	Q_Sort(0, vec.size() - 1);
+	MergeSort(0, vec.size() - 1);
 
 	for (auto iter : vec)
 	{

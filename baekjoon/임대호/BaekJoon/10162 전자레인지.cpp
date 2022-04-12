@@ -1,4 +1,3 @@
-// 그리디 알고리즘이 맞는지는 확실하지 않습니다 ㅠㅠ
 #include <iostream>
 
 using namespace std;

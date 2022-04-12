@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9a129660-c678-4590-93ba-4792d32531ca}</ProjectGuid>
-    <RootNamespace>BaekJoon</RootNamespace>
+    <ProjectGuid>{77b3598f-e59d-4d14-8760-a14ac8701dc4}</ProjectGuid>
+    <RootNamespace>Baecjoon</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -151,7 +151,7 @@
     <ClCompile Include="13771 Presents.cpp" />
     <ClCompile Include="1427 소트인사이드.cpp" />
     <ClCompile Include="14720 우유 축제.cpp" />
-    <ClCompile Include="16135 OBB %28Object bounding box.cpp" />
+    <ClCompile Include="16135 OBB (Object bounding box).cpp" />
     <ClCompile Include="1764 듣보잡.cpp" />
     <ClCompile Include="1920 수 찾기.cpp" />
     <ClCompile Include="1978 소수 찾기.cpp" />
@@ -163,9 +163,9 @@
     <ClCompile Include="5576 콘테스트.cpp" />
     <ClCompile Include="6996 애너그램.cpp" />
     <ClCompile Include="9012 괄호.cpp" />
+    <ClCompile Include="9076 점수 집계.cpp" />
     <ClCompile Include="9946 단어 퍼즐.cpp" />
     <ClCompile Include="template.cpp" />
-    <ClCompile Include="9076 점수 집계.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

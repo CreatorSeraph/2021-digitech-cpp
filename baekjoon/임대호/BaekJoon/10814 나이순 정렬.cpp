@@ -1,3 +1,4 @@
+// 다른 프로젝트에서 하고 코드 옮기자 ㅋㅋ
 #include <iostream>
 #include <vector>
 
@@ -6,7 +7,7 @@ using namespace std;
 struct Human
 {
 public:
-	Human(){}
+	Human() {}
 	Human(int _age, string _name, int _count) : age(_age), name(_name), count(_count) {}
 	int age;
 	string name;
@@ -30,7 +31,6 @@ int main()
 	cin >> n;
 
 	vec.resize(n);
-	int size = vec.size();
 	_vec.resize(n);
 
 	for (int i = 0; i < n; i++)
@@ -39,7 +39,6 @@ int main()
 		cin >> name;
 
 		vec[i] = Human(age, name, i);
-
 	}
 
 	MergeSort(0, n - 1);
@@ -77,7 +76,7 @@ void Merge(int start, int mid, int end)
 		while (left <= mid)
 			_vec[index++] = vec[left++];
 
-	for (int i = start; i < end; i++)
+	for (int i = start; i <= end; i++)
 		vec[i] = _vec[i];
 }
 

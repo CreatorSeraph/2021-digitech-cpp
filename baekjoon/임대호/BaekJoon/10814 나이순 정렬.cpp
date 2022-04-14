@@ -1,4 +1,3 @@
-// 다른 프로젝트에서 하고 코드 옮기자 ㅋㅋ
 #include <iostream>
 #include <vector>
 
@@ -17,10 +16,10 @@ public:
 vector<Human> vec;
 vector<Human> _vec;
 
-void Merge(int start, int mid, int end);
-void MergeSort(int start, int end);
+void Mer___ge(int start, int mid, int end);
+void Merge___Sort(int start, int end);
 
-int main()
+int 나이순정렬()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
@@ -41,7 +40,7 @@ int main()
 		vec[i] = Human(age, name, i);
 	}
 
-	MergeSort(0, n - 1);
+	Merge___Sort(0, n - 1);
 
 	for (int i = 0; i < vec.size(); i++)
 	{
@@ -51,7 +50,7 @@ int main()
 	return 0;
 }
 
-void Merge(int start, int mid, int end)
+void Mer___ge(int start, int mid, int end)
 {
 	int index = start;
 	int left = start;
@@ -59,13 +58,14 @@ void Merge(int start, int mid, int end)
 
 	while (left <= mid && right <= end)
 	{
-		if (vec[left].age > vec[right].age) _vec[index] = vec[left++];
-		else if (vec[left].age < vec[right].age) _vec[index] = vec[right++];
+		if (vec[left].age < vec[right].age) _vec[index] = vec[left++];
+		else if (vec[left].age > vec[right].age) _vec[index] = vec[right++];
 		else
 		{
 			if (vec[left].count < vec[right].count) _vec[index] = vec[left++];
 			else vec[index] = _vec[right++];
 		}
+		index++;
 	}
 
 	if (left > mid)
@@ -80,13 +80,13 @@ void Merge(int start, int mid, int end)
 		vec[i] = _vec[i];
 }
 
-void MergeSort(int start, int end)
+void Merge___Sort(int start, int end)
 {
 	if (start >= end) return;
 
 	int mid = (start + end) / 2;
 
-	MergeSort(start, mid);
-	MergeSort(mid + 1, end);
-	Merge(start, mid, end);
+	Merge___Sort(start, mid);
+	Merge___Sort(mid + 1, end);
+	Mer___ge(start, mid, end);
 }

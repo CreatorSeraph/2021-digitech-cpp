@@ -1,77 +1,131 @@
-// - 버려진 체스판입니다 -
-
 #include <iostream>
-#include <queue>
 #include <vector>
-#include <list>
-using namespace std;
 
-int 체스판다시칠하기()
+using namespace std;
+int main()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
 	ios::sync_with_stdio(false);
 
-	int x, y, re_coloring_count = 0, c_re_coloring_count = 0;
+	int n, m;
+	cin >> n >> m;
 
-	cin >> y >> x;
+	vector<vector<char>> vec(n);
 
-	vector<vector<char>> color(x);
-	vector<vector<char>> c_color(x);
-
-	char c;
-	for (int i = 0; i < x; i++)
+	for (int i = 0; i < n; i++)
 	{
-		for (int j = 0; j < y; j++)
+		vec[i].resize(m);
+
+		for (int j = 0; j < m; j++)
 		{
-			cin >> c;
-			color[i].push_back(c);
-			c_color[i].push_back(c);
+			cin >> vec[i][j];
+		}
+	}
 
-			if (i == 0 && j == 0)
+	int count, max = 0, ind_x = 0, ind_y = 0;
+	bool once = true;
+	for (int i = 0; i <= n - 8; i++)
+	{
+		for (int j = 0; j <= m - 8; j++)
+		{
+			count = 1;
+
+			for (int k = i; k < i + 8; k++)
 			{
-				c_color[0][0] = (c_color[0][0] == 'W' ? 'B' : 'W');
-				c_re_coloring_count++;
-			}
-
-			if (j > 0)
-			{
-				if (c == color[i][j - 1])
+				for (int l = j; l < j + 8; l++)
 				{
-					re_coloring_count++;
-					color[i][j] = (color[i][j] == 'W' ? 'B' : 'W');
-				}
+					if (l > j && vec[k][l] != vec[k][l - 1])
+					{
+						count++;
 
-				if (c == c_color[i][j - 1])
-				{
-					c_re_coloring_count++;
-					c_color[i][j] = (c_color[i][j] == 'W' ? 'B' : 'W');
+						if (count == 64)
+						{
+							cout << 0;
+							return 0;
+						}
+
+						if (count > max)
+						{
+							max = count;
+							ind_x = l;
+							ind_y = k;
+						}
+					}
+					else if (k > i && vec[k][l] != vec[k - 1][l])
+					{
+						if (once)
+						{
+							count++;
+
+							if (count == 64)
+							{
+								cout << 0;
+								return 0;
+							}
+
+							if (count > max)
+							{
+								max = count;
+								ind_x = l;
+								ind_y = k;
+							}
+						}
+					}
+					once = !once;
 				}
 			}
 		}
 	}
 
-	for (int j = 0; j < y; j++)
+	if (ind_x - 7 < 0) ind_x = 7;
+	if (ind_y - 7 < 0) ind_y = 7;
+
+	vector<vector<char>> _vec = vec;
+
+	_vec[ind_y][ind_x] = _vec[ind_y][ind_x] == 'B' ? 'W' : 'B';
+
+	int result_1 = 0, result_2 = 0;
+	for (int y = ind_y; y >= ind_y - 7; y--)
 	{
-		for (int i = 0; i < x; i++)
+		for (int x = ind_x; x >= ind_x - 7; x--)
 		{
-			if (i > 0)
+			if (x < ind_x)
 			{
-				if (color[i][j] == color[i - 1][j])
+				if (vec[y][x] == vec[y][x + 1])
 				{
-					re_coloring_count++;
-					color[i][j] = (color[i][j] == 'W' ? 'B' : 'W');
+					result_1++;
+
+					vec[y][x] = (vec[y][x + 1] == 'B' ? 'W' : 'B');
 				}
-				if (c_color[i][j] == c_color[i - 1][j])
+
+				if (_vec[y][x] == _vec[y][x + 1])
 				{
-					c_re_coloring_count++;
-					c_color[i][j] = (c_color[i][j] == 'W' ? 'B' : 'W');
+					result_2++;
+
+					_vec[y][x] = (_vec[y][x + 1] == 'B' ? 'W' : 'B');
+				}
+			}
+			else if (y < ind_y)
+			{
+				if (vec[y][x] == vec[y + 1][x])
+				{
+					result_1++;
+
+					vec[y][x] = (vec[y + 1][x] == 'B' ? 'W' : 'B');
+				}
+
+				if (_vec[y][x] == _vec[y + 1][x])
+				{
+					result_2++;
+
+					_vec[y][x] = (_vec[y + 1][x] == 'B' ? 'W' : 'B');
 				}
 			}
 		}
 	}
-	  
-	cout << (re_coloring_count < c_re_coloring_count ? re_coloring_count : c_re_coloring_count);
+
+	cout << (result_1 < result_2 ? result_1 : result_2);
 
 	return 0;
 }

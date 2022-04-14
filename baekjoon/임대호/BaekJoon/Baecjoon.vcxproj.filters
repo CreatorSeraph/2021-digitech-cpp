@@ -96,5 +96,8 @@
     <ClCompile Include="template.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11050 이항 계수 1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

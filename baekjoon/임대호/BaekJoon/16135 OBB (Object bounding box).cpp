@@ -111,10 +111,11 @@ bool OBBCheck(Vector2 direction, Vector2 center1, Vector2 center2)
 	sum = value_1 + value_2 + value_3 + value_4;
 
 	float result = fabsf(r_value - sum);
-	// if (result < FLT_EPSILON)
-	// 	cout << "¤·¤±È£¸Ï¤Å¤½ÃÊ¼¤±¤¤";
 
-	return r_value > sum && result >= FLT_EPSILON;
+	if (r_value >= sum || result >= FLT_EPSILON * 6)
+		cout << "¤·¤±È£¸Ï¤Å¤½ÃÊ¼¤±¤¤";
+
+	return r_value >= sum || result >= FLT_EPSILON * 6;
 }
 
 int main()

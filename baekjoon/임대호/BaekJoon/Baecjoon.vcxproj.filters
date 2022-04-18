@@ -90,13 +90,19 @@
     <ClCompile Include="14720 우유 축제.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="16135 OBB (Object bounding box).cpp">
+    <ClCompile Include="16135 OBB %28Oriented bounding box%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="template.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="11050 이항 계수 1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11651 좌표 정렬하기2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4949 균형잡힌 세상.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

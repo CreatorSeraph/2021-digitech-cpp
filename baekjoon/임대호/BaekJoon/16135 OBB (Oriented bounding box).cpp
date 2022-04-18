@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cfloat>
 #include <math.h>
 
 using namespace std;
@@ -82,7 +81,7 @@ float Distance(Vector2 a, Vector2 b)
 
 float DotProduct(Vector2 a, Vector2 b)
 {
-	return abs(a.x * b.x) + abs(a.y * b.y);
+	return abs(a.x * b.x + a.y * b.y);
 }
 
 bool OBBCheck(Vector2 direction, Vector2 center1, Vector2 center2)
@@ -92,33 +91,28 @@ bool OBBCheck(Vector2 direction, Vector2 center1, Vector2 center2)
 	float rects_distance = Distance(center1, center2);
 	float r_value = DotProduct(rects_dir * rects_distance, direction);
 
-	Vector2 dir_vec_1 = Normalize(rect1[1] - rect1[0]);
-	float distance_1 = Distance(rect1[1], rect1[0]) / 2;
+	Vector2 dir_vec_1 = Normalize(rect1[0] - rect1[1]);
+	float distance_1 = Distance(rect1[0], rect1[1]) / 2;
 	float value_1 = DotProduct(dir_vec_1 * distance_1, direction);
 
-	Vector2 dir_vec_2 = Normalize(rect1[2] - rect1[1]);
-	float distance_2 = Distance(rect1[2], rect1[1]) / 2;
+	Vector2 dir_vec_2 = Normalize(rect1[1] - rect1[2]);
+	float distance_2 = Distance(rect1[1], rect1[2]) / 2;
 	float value_2 = DotProduct(dir_vec_2 * distance_2, direction);
 
-	Vector2 dir_vec_3 = Normalize(rect2[1] - rect2[0]);
-	float distance_3 = Distance(rect2[1], rect2[0]) / 2;
+	Vector2 dir_vec_3 = Normalize(rect2[0] - rect2[1]);
+	float distance_3 = Distance(rect2[0], rect2[1]) / 2;
 	float value_3 = DotProduct(dir_vec_3 * distance_3, direction);
 
-	Vector2 dir_vec_4 = Normalize(rect2[2] - rect2[1]);
-	float distance_4 = Distance(rect2[2], rect2[1]) / 2;
+	Vector2 dir_vec_4 = Normalize(rect2[1] - rect2[2]);
+	float distance_4 = Distance(rect2[1], rect2[2]) / 2;
 	float value_4 = DotProduct(dir_vec_4 * distance_4, direction);
 
 	sum = value_1 + value_2 + value_3 + value_4;
 
-	float result = fabsf(r_value - sum);
-
-	if (r_value >= sum || result >= FLT_EPSILON * 6)
-		cout << "¤·¤±È£¸Ï¤Å¤½ÃÊ¼¤±¤¤";
-
-	return r_value >= sum || result >= FLT_EPSILON * 6;
+	return round(r_value * 100) >= round(sum * 100);
 }
 
-int main()
+int OBB()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
@@ -142,19 +136,19 @@ int main()
 		return 0;
 	}
 
-	Vector2 rect1_dir1 = Normalize(rect1[3] - rect1[0]);
-	Vector2 rect1_dir2 = Normalize(rect1[0] - rect1[1]);
-	Vector2 rect2_dir1 = Normalize(rect2[3] - rect2[0]);
-	Vector2 rect2_dir2 = Normalize(rect2[0] - rect2[1]);
+	Vector2 rect1_dir1 = Normalize(rect1[0] - rect1[1]);
+	Vector2 rect1_dir2 = Normalize(rect1[1] - rect1[2]);
+	Vector2 rect2_dir1 = Normalize(rect2[0] - rect2[1]);
+	Vector2 rect2_dir2 = Normalize(rect2[1] - rect2[2]);
 	Vector2 directions[4] = { rect1_dir1, rect1_dir2, rect2_dir1, rect2_dir2 };
 
-	float line = Distance(rect1[0], rect1[2]);
-	Vector2 dir = Normalize(rect1[2] - rect1[0]);
-	Vector2 center1 = rect1[0] + dir * (line / 2);
+	float line_1 = Distance(rect1[0], rect1[2]);
+	Vector2 dir_1 = Normalize(rect1[2] - rect1[0]);
+	Vector2 center1 = rect1[0] + dir_1 * (line_1 / 2);
 
-	line = Distance(rect2[0], rect2[2]);
-	dir = Normalize(rect2[2] - rect2[0]);
-	Vector2 center2 = rect2[0] + dir * (line / 2);
+	float line_2 = Distance(rect2[0], rect2[2]);
+	Vector2 dir_2 = Normalize(rect2[2] - rect2[0]);
+	Vector2 center2 = rect2[0] + dir_2 * (line_2 / 2);
 
 	for (int i = 0; i < 4; i++)
 	{

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main()
+int ±ÕÇüÀâÈù¼¼»ó()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
@@ -13,61 +13,53 @@ int main()
 	char c;
 	bool no = false;
 
-	stack<char> c_s;
-
 	string s = "";
 	do
 	{
-
 		getline(cin, s);
+
+		if (s == ".") break;
+
+		no = false;
+		stack<char> c_s;
 
 		for (int i = 0; i < s.size(); i++)
 		{
 			c = s[i];
 
-			if (c == '.')
-			{
-				if (s[0] == '.') return 0;
-
-				if (!no)
-				{
-					if (c_s.empty()) cout << "yes" << '\n';
-					else cout << "no" << '\n';
-				}
-				else cout << "no" << '\n';
-
-				s = "";
-
-				for (int i = 0; i < c_s.size(); i++)
-				{
-					c_s.pop();
-				}
-
-				no = false;
-
-				break;
-			}
-
-			if (c == '(')
+			if (c == '(' || c == '[')
 				c_s.push(c);
-			else if (c == ')' && !c_s.empty())
-			{
-				if (c_s.top() == '(')
-					c_s.pop();
-				else no = true;
-			}
-			else if (c == ')' && c_s.empty()) no = true;
 
-			if (c == '[')
-				c_s.push(c);
-			else if (c == ']' && !c_s.empty())
+			else if (c == ')')
 			{
-				if (c_s.top() == '[')
+				if (!c_s.empty() && c_s.top() == '(')
 					c_s.pop();
-				else no = true;
+				else
+				{
+					no = true;
+					break;
+				}
 			}
-			else if (c == ']' && c_s.empty()) no = true;
+
+			else if (c == ']')
+			{
+				if (!c_s.empty() && c_s.top() == '[')
+					c_s.pop();
+				else
+				{
+					no = true;
+					break;
+				}
+			}
 		}
+
+		if (!no)
+		{
+			if (c_s.empty()) cout << "yes" << '\n';
+			else cout << "no" << '\n';
+		}
+		else cout << "no" << '\n';
+
 	} while (true);
 
 	return 0;

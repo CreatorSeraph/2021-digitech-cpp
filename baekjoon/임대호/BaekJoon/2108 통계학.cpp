@@ -9,7 +9,7 @@ void Mege____Sort(int start, int end);
 vector<int> v;
 vector<int> _v;
 
-int main()
+int ≈Î∞Ë«–()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
@@ -21,22 +21,21 @@ int main()
 	v.resize(n);
 	_v.resize(n);
 
-	int sum = 0;
-	int min = 4001;
-	int max = -4001;
+	int sum = 0, average, min, max;
 
 	for (int i = 0; i < n; i++)
 	{
 		cin >> v[i];
 		sum += v[i];
-
-		if (v[i] > max) max = v[i];
-		if (v[i] < min) min = v[i];
 	}
 
-	Mege____Sort(0, n - 1);
+	average = round((sum / n * 10)) / 10;
 
-	cout << (int)(sum / n) << '\n';
+	Mege____Sort(0, n - 1);
+	min = v[0];
+	max = v[v.size() - 1];
+
+	cout << average << '\n';
 	cout << v[(int)(n / 2)] << '\n';
 	cout << 0 << '\n';
 	cout << max - min;
@@ -68,7 +67,7 @@ void Mer____ge(int start, int mid, int end)
 		while (left <= mid)
 			_v[index++] = v[left++];
 
-	for (int i = start; i < end; i++)
+	for (int i = start; i <= end; i++)
 		v[i] = _v[i];
 }
 

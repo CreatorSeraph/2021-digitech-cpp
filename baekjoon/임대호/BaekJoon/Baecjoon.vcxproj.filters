@@ -114,5 +114,8 @@
     <ClCompile Include="2108 통계학.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10104 Party Invitation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

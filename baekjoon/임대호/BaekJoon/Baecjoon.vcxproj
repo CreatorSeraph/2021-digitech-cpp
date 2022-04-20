@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="1009 분산처리.cpp" />
+    <ClCompile Include="10104 Party Invitation.cpp" />
     <ClCompile Include="10162 전자레인지.cpp" />
     <ClCompile Include="1018 체스판 다시 칠하기.cpp" />
     <ClCompile Include="10773 제로.cpp" />

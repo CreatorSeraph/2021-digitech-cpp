@@ -114,7 +114,13 @@
     <ClCompile Include="2108 통계학.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="10104 Party Invitation.cpp">
+    <ClCompile Include="12605 단어순서 뒤집기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="18258 큐 2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2204 도비의 난독증 테스트.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

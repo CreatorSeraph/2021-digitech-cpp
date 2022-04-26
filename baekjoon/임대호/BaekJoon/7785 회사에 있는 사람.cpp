@@ -1,37 +1,55 @@
 //#include <iostream>
 //#include <vector>
+//#include <map>
+//#include <algorithm>
+//
 //using namespace std;
+//
+//void Merge(int start, int mid, int end);
+//void MergeSort(int start, int end);
+//
 //vector<string> v;
 //vector<string> _v;
 //
-//void Mer______ge(int start, int mid, int end);
-//void Merge______Sort(int start, int end);
-//
-//int 너의핸들은()
+//int main()
 //{
 //	cin.tie(nullptr);
 //	cout.tie(nullptr);
 //	ios::sync_with_stdio(false);
 //
-//	int n, i;
-//	cin >> n >> i;
+//	int n;
+//	cin >> n;
 //
-//	v.resize(n);
-//	_v.resize(n);
 //
+//	map<string, int> m;
+//	string s, temp;
 //	for (int i = 0; i < n; i++)
 //	{
-//		cin >> v[i];
+//		cin >> s >> temp;
+//
+//		auto find = m.find(s);
+//
+//		if (find == m.end())
+//			m.insert(make_pair(s, 0));
+//		else
+//			m.erase(find);
 //	}
 //
-//	Merge______Sort(0, n - 1);
+//	for (auto iter : m)
+//	{
+//		v.push_back(iter.first);
+//	}
+//	_v.resize(v.size());
 //
-//	cout << v[i];
+//	MergeSort(0, m.size() - 1);
+//
+//	for (auto iter : v)
+//		cout << iter << '\n';
 //
 //	return 0;
 //}
 //
-//void Mer______ge(int start, int mid, int end)
+//void Merge(int start, int mid, int end)
 //{
 //	int index = start;
 //	int left = start;
@@ -39,7 +57,7 @@
 //
 //	while (left <= mid && right <= end)
 //	{
-//		if (v[left] < v[right])
+//		if (v[left] > v[right])
 //			_v[index] = v[left++];
 //		else
 //			_v[index] = v[right++];
@@ -57,15 +75,15 @@
 //
 //	for (int i = start; i <= end; i++)
 //		v[i] = _v[i];
-// }
+//}
 //
-//void Merge______Sort(int start, int end)
+//void MergeSort(int start, int end)
 //{
 //	if (start >= end) return;
 //
 //	int mid = (start + end) / 2;
 //
-//	Merge______Sort(start, mid);
-//	Merge______Sort(mid + 1, end);
-//	Mer______ge(start, mid, end);
+//	MergeSort(start, mid);
+//	MergeSort(mid + 1, end);
+//	Merge(start, mid, end);
 //}

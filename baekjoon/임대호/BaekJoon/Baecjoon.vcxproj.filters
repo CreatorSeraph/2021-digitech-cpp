@@ -138,5 +138,20 @@
     <ClCompile Include="15819 너의 핸들은.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="7785 회사에 있는 사람.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1822 차집합.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2776 암기왕.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="20499 Darius님 한타 안 함물음표.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="5635 생일.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

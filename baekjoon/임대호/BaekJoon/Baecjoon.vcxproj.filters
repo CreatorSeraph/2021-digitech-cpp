@@ -123,5 +123,20 @@
     <ClCompile Include="2204 도비의 난독증 테스트.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2440 별 찍기 - 3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2441 별 찍기 - 4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2442 별 찍기 - 5.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2443 별 찍기 - 6.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="15819 너의 핸들은.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

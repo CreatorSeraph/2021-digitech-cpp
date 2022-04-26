@@ -155,6 +155,7 @@
     <ClCompile Include="13771 Presents.cpp" />
     <ClCompile Include="1427 소트인사이드.cpp" />
     <ClCompile Include="14720 우유 축제.cpp" />
+    <ClCompile Include="15819 너의 핸들은.cpp" />
     <ClCompile Include="16135 OBB %28Oriented bounding box%29.cpp" />
     <ClCompile Include="1764 듣보잡.cpp" />
     <ClCompile Include="18258 큐 2.cpp" />
@@ -164,6 +165,10 @@
     <ClCompile Include="2164 카드2.cpp" />
     <ClCompile Include="2204 도비의 난독증 테스트.cpp" />
     <ClCompile Include="2309 일곱 난쟁이.cpp" />
+    <ClCompile Include="2440 별 찍기 - 3.cpp" />
+    <ClCompile Include="2441 별 찍기 - 4.cpp" />
+    <ClCompile Include="2442 별 찍기 - 5.cpp" />
+    <ClCompile Include="2443 별 찍기 - 6.cpp" />
     <ClCompile Include="2605 줄 세우기.cpp" />
     <ClCompile Include="2609 최대공약수와 최소공배수.cpp" />
     <ClCompile Include="2720 세탁소.cpp" />

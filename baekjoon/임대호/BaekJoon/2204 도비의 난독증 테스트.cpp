@@ -5,11 +5,13 @@ using namespace std;
 
 vector<string> v;
 vector<string> _v;
+vector<string> __v;
+vector<string> ___v;
 
 void Mer_____ge(int start, int mid, int end);
 void Merge_____Sort(int start, int end);
 
-int main()
+int 도비의난독증테스트()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
@@ -25,23 +27,26 @@ int main()
 
 		v.resize(n);
 		_v.resize(n);
+		__v.resize(n);
+		___v.resize(n);
 
 		for (int i = 0; i < n; i++)
 		{
 			cin >> v[i];
+			__v[i] = v[i];
 
 			for (int j = 0; j < v[i].size(); j++)
 			{
 				if ((v[i][j]) > 96)
 				{
-					v[i][j] = v[i][j] - 22;
+					v[i][j] = v[i][j] - 32;
 				}
 			}
 
 		}
 		Merge_____Sort(0, n - 1);
 
-		cout << v[0] << '\n';
+		cout << __v[0] << '\n';
 	}
 
 	return 0;
@@ -56,24 +61,38 @@ void Mer_____ge(int start, int mid, int end)
 	while (left <= mid && right <= end)
 	{
 		if (v[left] < v[right])
-			_v[index] = v[left++];
+		{
+			_v[index] = v[left];
+			___v[index] = __v[left++];
+		}
 		else
-			_v[index] = v[right++];
+		{
+			_v[index] = v[right];
+			___v[index] = __v[right++];
+		}
 
 		index++;
 	}
 
 	if (left > mid)
 		while (right <= end)
-			_v[index++] = v[right++];
+		{
+			_v[index] = v[right];
+			___v[index++] = __v[right++];
+		}
 
 	else if (right > end)
 		while (left <= mid)
-			_v[index++] = v[left++];
+		{
+			_v[index] = v[left];
+			___v[index++] = __v[left++];
+		}
 
 	for (int i = start; i <= end; i++)
+	{
 		v[i] = _v[i];
-
+		__v[i] = ___v[i];
+	}
 }
 
 void Merge_____Sort(int start, int end)

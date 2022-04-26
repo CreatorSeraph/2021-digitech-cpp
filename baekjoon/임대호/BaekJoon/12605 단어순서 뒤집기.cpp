@@ -2,8 +2,6 @@
 #include <stack>
 #include <string>
 
-// ??? 100%였는데? 왜안돼징?
-
 using namespace std;
 int 단어순서뒤집기()
 {
@@ -40,7 +38,7 @@ int 단어순서뒤집기()
 		s_s.push(r);
 		r = "";
 
-		cout << "Case #" << i + 1 << ' ';
+		cout << "Case #" << i + 1 << ": ";
 
 		int size = s_s.size();
 		for (int j = 0; j < size; j++)

@@ -123,5 +123,8 @@
     <ClCompile Include="2204 도비의 난독증 테스트.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1340 연도 진행바.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

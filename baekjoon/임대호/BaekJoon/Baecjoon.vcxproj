@@ -152,6 +152,7 @@
     <ClCompile Include="1181 단어 정렬.cpp" />
     <ClCompile Include="11866 요세푸스 문제 0.cpp" />
     <ClCompile Include="12605 단어순서 뒤집기.cpp" />
+    <ClCompile Include="1340 연도 진행바.cpp" />
     <ClCompile Include="13771 Presents.cpp" />
     <ClCompile Include="1427 소트인사이드.cpp" />
     <ClCompile Include="14720 우유 축제.cpp" />

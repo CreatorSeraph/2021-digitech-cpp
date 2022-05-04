@@ -191,6 +191,7 @@
     <ClCompile Include="9076 점수 집계.cpp" />
     <ClCompile Include="9946 단어 퍼즐.cpp" />
     <ClCompile Include="template.cpp" />
+    <ClCompile Include="소스.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

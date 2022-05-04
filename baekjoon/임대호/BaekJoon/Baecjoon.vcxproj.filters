@@ -168,5 +168,8 @@
     <ClCompile Include="2075 N번째 큰 수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1708 블록 껍질.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

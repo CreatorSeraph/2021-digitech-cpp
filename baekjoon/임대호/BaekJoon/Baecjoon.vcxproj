@@ -160,6 +160,7 @@
     <ClCompile Include="14720 우유 축제.cpp" />
     <ClCompile Include="15819 너의 핸들은.cpp" />
     <ClCompile Include="16135 OBB %28Oriented bounding box%29.cpp" />
+    <ClCompile Include="1708 블록 껍질.cpp" />
     <ClCompile Include="1764 듣보잡.cpp" />
     <ClCompile Include="1822 차집합.cpp" />
     <ClCompile Include="18258 큐 2.cpp" />

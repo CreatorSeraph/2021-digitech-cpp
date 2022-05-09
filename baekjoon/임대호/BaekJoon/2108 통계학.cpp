@@ -1,49 +1,12 @@
 //#include <iostream>
+//#include <list>
 //#include <vector>
+//#include <unordered_map>
+//#include <math.h>
 //
 //using namespace std;
 //
-//void Mer____ge(int start, int mid, int end);
-//void Mege____Sort(int start, int end);
-//
-//vector<int> v;
-//vector<int> _v;
-//
-//int Åë°èÇÐ()
-//{
-//	cin.tie(nullptr);
-//	cout.tie(nullptr);
-//	ios::sync_with_stdio(false);
-//
-//	int n;
-//	cin >> n;
-//
-//	v.resize(n);
-//	_v.resize(n);
-//
-//	int sum = 0, average, min, max;
-//
-//	for (int i = 0; i < n; i++)
-//	{
-//		cin >> v[i];
-//		sum += v[i];
-//	}
-//
-//	average = round((sum / n * 10)) / 10;
-//
-//	Mege____Sort(0, n - 1);
-//	min = v[0];
-//	max = v[v.size() - 1];
-//
-//	cout << average << '\n';
-//	cout << v[(int)(n / 2)] << '\n';
-//	cout << 0 << '\n';
-//	cout << max - min;
-//
-//	return 0;
-//}
-//
-//void Mer____ge(int start, int mid, int end)
+//void Merge(vector<int>& v, vector<int>& _v, int start, int mid, int end)
 //{
 //	int index = start;
 //	int left = start;
@@ -71,13 +34,92 @@
 //		v[i] = _v[i];
 //}
 //
-//void Mege____Sort(int start, int end)
+//void MegeSort(vector<int>& v, vector<int>& _v, int start, int end)
 //{
 //	if (start >= end) return;
 //
 //	int mid = (start + end) / 2;
 //
-//	Mege____Sort(start, mid);
-//	Mege____Sort(mid + 1, end);
-//	Mer____ge(start, mid, end);
+//	MegeSort(v, _v, start, mid);
+//	MegeSort(v, _v, mid + 1, end);
+//	Merge(v, _v, start, mid, end);
+//}
+//
+//int main()
+//{
+//	cin.tie(nullptr);
+//	cout.tie(nullptr);
+//	ios::sync_with_stdio(false);
+//
+//	int n;
+//	cin >> n;
+//
+//	vector<int> v(n);
+//	vector<int> _v = v;
+//
+//	int sum = 0, max_count = 1, max_value = 0;
+//	bool several = false;
+//
+//	unordered_map<int, int> m;
+//	list<int> l;
+//
+//	for (int i = 0; i < n; i++)
+//	{
+//		cin >> v[i];
+//		sum += v[i];
+//
+//		auto find = m.find(v[i]);
+//
+//		if (find != m.end())
+//		{
+//			m[v[i]] = find->second + 1;
+//
+//			if (find->second + 1 > max_count)
+//			{
+//				several = false;
+//				max_value = find->first;
+//				max_count = find->second + 1;
+//				l.clear();
+//			}
+//			else if (find->second + 1 == max_count)
+//				several = true;
+//
+//			l.push_back(find->first);
+//		}
+//		else
+//		{
+//			m.insert(make_pair(v[i], 1));
+//
+//			if (max_count == 1)
+//			{
+//				several = true;
+//				max_value = v[i];
+//				l.push_back(v[i]);
+//			}
+//		}
+//	}
+//
+//	if (several && l.size() > 1)
+//		l.sort();
+//
+//	MegeSort(v, _v, 0, n - 1);
+//
+//
+//	// Æò±Õ
+//	cout << (int)round(sum / (float)n) << '\n';
+//
+//	// Áß¾Ó°ª
+//	cout << v[(int)(n / 2)] << '\n';
+//
+//	// ÃÖºó°ª
+//	if (several && l.size() > 1)
+//		cout << *(++l.begin()) << '\n';
+//	else
+//		cout << max_value << '\n';
+//
+//	// ¹üÀ§
+//	cout << v[n - 1] - v[0];
+//
+//
+//	return 0;
 //}

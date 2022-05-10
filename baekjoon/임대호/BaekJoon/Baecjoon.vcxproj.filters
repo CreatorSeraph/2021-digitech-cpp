@@ -183,5 +183,11 @@
     <ClCompile Include="11404 플로이드.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1389 케빈 베이컨의 6단계 법칙.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11780 플로이드 2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

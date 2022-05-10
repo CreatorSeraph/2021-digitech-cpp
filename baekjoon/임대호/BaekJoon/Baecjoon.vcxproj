@@ -152,12 +152,14 @@
     <ClCompile Include="11404 플로이드.cpp" />
     <ClCompile Include="11650 좌표 정렬하기.cpp" />
     <ClCompile Include="11651 좌표 정렬하기2.cpp" />
+    <ClCompile Include="11780 플로이드 2.cpp" />
     <ClCompile Include="1181 단어 정렬.cpp" />
     <ClCompile Include="11866 요세푸스 문제 0.cpp" />
     <ClCompile Include="12605 단어순서 뒤집기.cpp" />
     <ClCompile Include="13241 최소공배수.cpp" />
     <ClCompile Include="1343 폴리오미노.cpp" />
     <ClCompile Include="13771 Presents.cpp" />
+    <ClCompile Include="1389 케빈 베이컨의 6단계 법칙.cpp" />
     <ClCompile Include="1427 소트인사이드.cpp" />
     <ClCompile Include="14720 우유 축제.cpp" />
     <ClCompile Include="15819 너의 핸들은.cpp" />

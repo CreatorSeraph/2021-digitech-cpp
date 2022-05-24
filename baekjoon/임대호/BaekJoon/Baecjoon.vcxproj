@@ -157,11 +157,13 @@
     <ClCompile Include="11866 요세푸스 문제 0.cpp" />
     <ClCompile Include="12605 단어순서 뒤집기.cpp" />
     <ClCompile Include="13241 최소공배수.cpp" />
+    <ClCompile Include="13420 사칙연산.cpp" />
     <ClCompile Include="1343 폴리오미노.cpp" />
     <ClCompile Include="13771 Presents.cpp" />
     <ClCompile Include="1389 케빈 베이컨의 6단계 법칙.cpp" />
     <ClCompile Include="1427 소트인사이드.cpp" />
     <ClCompile Include="14720 우유 축제.cpp" />
+    <ClCompile Include="14915 진수 변환기.cpp" />
     <ClCompile Include="15819 너의 핸들은.cpp" />
     <ClCompile Include="16135 OBB %28Oriented bounding box%29.cpp" />
     <ClCompile Include="1708 블록 껍질.cpp" />
@@ -169,6 +171,7 @@
     <ClCompile Include="1764 듣보잡.cpp" />
     <ClCompile Include="1822 차집합.cpp" />
     <ClCompile Include="18258 큐 2.cpp" />
+    <ClCompile Include="19087 모음의 수.cpp" />
     <ClCompile Include="1920 수 찾기.cpp" />
     <ClCompile Include="1929 소수 구하기.cpp" />
     <ClCompile Include="1934 최소공배수.cpp" />

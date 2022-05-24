@@ -183,6 +183,7 @@
     <ClCompile Include="2441 별 찍기 - 4.cpp" />
     <ClCompile Include="2442 별 찍기 - 5.cpp" />
     <ClCompile Include="2443 별 찍기 - 6.cpp" />
+    <ClCompile Include="2444 별 찍기 7.cpp" />
     <ClCompile Include="2605 줄 세우기.cpp" />
     <ClCompile Include="2609 최대공약수와 최소공배수.cpp" />
     <ClCompile Include="2720 세탁소.cpp" />

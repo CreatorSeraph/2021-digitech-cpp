@@ -7,15 +7,37 @@ int main()
 	cout.tie(nullptr);
 	ios::sync_with_stdio(false);
 
-	int n, size, i, temp;
+	int n, size, i, temp, result = 0, count = 1;
 	cin >> n;
 
-	queue<int> q;
-
-	for (int i = 0; i < n; i++)
+	for (int j = 0; j < n; j++)
 	{
-		cin >> temp;
-		q.push(temp);
+		cin >> size >> i;
+
+		priority_queue<int, vector<int>, less<int>> pq;
+		count = 1;
+
+		for (int k = 0; k < size; k++)
+		{
+			cin >> temp;
+			pq.push(temp);
+
+			if (k == i) result = temp;
+		}
+
+		while (!pq.empty())
+		{
+			temp = pq.top();
+			pq.pop();
+
+			if (result == temp) 
+			{
+				cout << count << '\n';
+				break;
+			}
+
+			count++;
+		}
 	}
 
 

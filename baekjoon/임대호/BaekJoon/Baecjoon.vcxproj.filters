@@ -222,5 +222,14 @@
     <ClCompile Include="1966 프린터 큐.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="17478 재귀함수가 뭔가요물음표.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1011 Fly me to the Alpha Centauri.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="9655 돌 게임.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

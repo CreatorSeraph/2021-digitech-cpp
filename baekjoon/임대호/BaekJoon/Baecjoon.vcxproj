@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="1009 분산처리.cpp" />
+    <ClCompile Include="1011 Fly me to the Alpha Centauri.cpp" />
     <ClCompile Include="10162 전자레인지.cpp" />
     <ClCompile Include="1018 체스판 다시 칠하기.cpp" />
     <ClCompile Include="1037 약수.cpp" />
@@ -170,6 +171,7 @@
     <ClCompile Include="16135 OBB %28Oriented bounding box%29.cpp" />
     <ClCompile Include="1708 블록 껍질.cpp" />
     <ClCompile Include="1719 택배.cpp" />
+    <ClCompile Include="17478 재귀함수가 뭔가요물음표.cpp" />
     <ClCompile Include="1764 듣보잡.cpp" />
     <ClCompile Include="1822 차집합.cpp" />
     <ClCompile Include="18258 큐 2.cpp" />
@@ -206,6 +208,7 @@
     <ClCompile Include="7785 회사에 있는 사람.cpp" />
     <ClCompile Include="9012 괄호.cpp" />
     <ClCompile Include="9076 점수 집계.cpp" />
+    <ClCompile Include="9655 돌 게임.cpp" />
     <ClCompile Include="9946 단어 퍼즐.cpp" />
     <ClCompile Include="template.cpp" />
   </ItemGroup>

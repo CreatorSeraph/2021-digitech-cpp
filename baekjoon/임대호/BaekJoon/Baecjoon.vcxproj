@@ -147,6 +147,7 @@
     <ClCompile Include="10773 제로.cpp" />
     <ClCompile Include="10814 나이순 정렬.cpp" />
     <ClCompile Include="10816 숫자 카드 2.cpp" />
+    <ClCompile Include="11004 K번째 수.cpp" />
     <ClCompile Include="11034 캥거루 3마리2.cpp" />
     <ClCompile Include="11050 이항 계수 1.cpp" />
     <ClCompile Include="11403 경로 찾기.cpp" />
@@ -169,6 +170,7 @@
     <ClCompile Include="15688 수 정렬하기 5.cpp" />
     <ClCompile Include="15819 너의 핸들은.cpp" />
     <ClCompile Include="16135 OBB %28Oriented bounding box%29.cpp" />
+    <ClCompile Include="1629 곱셈.cpp" />
     <ClCompile Include="1708 블록 껍질.cpp" />
     <ClCompile Include="1719 택배.cpp" />
     <ClCompile Include="17478 재귀함수가 뭔가요물음표.cpp" />

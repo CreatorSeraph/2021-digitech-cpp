@@ -161,6 +161,7 @@
     <ClCompile Include="12605 단어순서 뒤집기.cpp" />
     <ClCompile Include="13241 최소공배수.cpp" />
     <ClCompile Include="13420 사칙연산.cpp" />
+    <ClCompile Include="13424 비밀 모임.cpp" />
     <ClCompile Include="1343 폴리오미노.cpp" />
     <ClCompile Include="13771 Presents.cpp" />
     <ClCompile Include="1389 케빈 베이컨의 6단계 법칙.cpp" />
@@ -170,7 +171,6 @@
     <ClCompile Include="15688 수 정렬하기 5.cpp" />
     <ClCompile Include="15819 너의 핸들은.cpp" />
     <ClCompile Include="16135 OBB %28Oriented bounding box%29.cpp" />
-    <ClCompile Include="1629 곱셈.cpp" />
     <ClCompile Include="1708 블록 껍질.cpp" />
     <ClCompile Include="1719 택배.cpp" />
     <ClCompile Include="17478 재귀함수가 뭔가요물음표.cpp" />

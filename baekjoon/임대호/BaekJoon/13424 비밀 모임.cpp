@@ -25,7 +25,7 @@ void FloydWalshall(int size)
 	}
 }
 
-int main()
+int 비밀모임()
 {
 	cin.tie(nullptr);
 	cout.tie(nullptr);

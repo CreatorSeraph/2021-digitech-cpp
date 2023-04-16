@@ -1,10 +1,9 @@
 /*
-↓↓↓복사하세용↓↓↓
-
 #include <iostream>
+#define var auto;
+
 using namespace std;
-int main()
-{
+int main() {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
 	ios::sync_with_stdio(false);
@@ -12,5 +11,4 @@ int main()
 	return 0;
 }
 
-↑↑↑복사하세용↑↑↑
 */

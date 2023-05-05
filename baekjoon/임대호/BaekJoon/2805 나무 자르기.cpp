@@ -1,10 +1,10 @@
-#include <algorithm>
+/*#include <algorithm>
 #include <iostream>
 
 using namespace std;
 int n, m;
 
-long long bSearch_히히(int left, int right, const int* heights) {
+long long bSearch_gg(int left, int right, const int* heights) {
 	long long height = 0;
 	int mid = right / 2;
 
@@ -52,7 +52,7 @@ int 나무자르기() {
 		return 0;
 	}
 
-	cout << bSearch(0, max_, heights);
+	cout << bSearch_gg(0, max_, heights);
 
 	return 0;
-}
+}*/

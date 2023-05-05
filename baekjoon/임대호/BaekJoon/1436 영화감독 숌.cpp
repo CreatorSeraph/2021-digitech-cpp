@@ -1,3 +1,4 @@
+/*
 #include <iostream>
 #include <string>
 #define var auto;
@@ -24,3 +25,4 @@ int main() {
 	
 	return 0;
 }
+*/

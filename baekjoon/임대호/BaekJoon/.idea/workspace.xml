@@ -21,12 +21,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7dbf726-62f7-4ee9-8919-584a09399a22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/1676 팩토리얼 0의 개수.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Baekjoon.sln.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Baekjoon.sln.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/18111 마인크래프트.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1874 스택 수열.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1874 스택 수열.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1966 프린터 큐.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1966 프린터 큐.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/template.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699596482448</updated>
-      <workItem from="1699596484576" duration="7518000" />
+      <workItem from="1699596484576" duration="9998000" />
     </task>
     <servers />
   </component>

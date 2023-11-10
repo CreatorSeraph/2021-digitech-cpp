@@ -1,6 +1,5 @@
 /*
 #include <iostream>
-#define var auto;
 
 using namespace std;
 int main() {

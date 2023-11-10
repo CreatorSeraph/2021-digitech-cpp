@@ -1,44 +1,56 @@
 //#include <iostream>
-//#include <queue>
+//#include <list>
+//#include <utility>
+//
 //using namespace std;
-//int main()
-//{
+//
+//int main() {
 //	cin.tie(nullptr);
 //	cout.tie(nullptr);
 //	ios::sync_with_stdio(false);
 //
-//	int n, size, i, temp, result = 0, count = 1;
-//	cin >> n;
+//    int count, n, m;
 //
-//	for (int j = 0; j < n; j++)
-//	{
-//		cin >> size >> i;
+//    cin >> count;
 //
-//		priority_queue<int, vector<int>, less<int>> pq;
-//		count = 1;
+//    for (int i = 0; i < count; i++) {
+//        cin >> n >> m;
 //
-//		for (int k = 0; k < size; k++)
-//		{
-//			cin >> temp;
-//			pq.push(temp);
+//        int ret = 0;
+//        list<pair<int, int> > l;
+//        for (int j = 0; j < n; j++) {
+//            int temp;
+//            cin >> temp;
 //
-//			if (k == i) result = temp;
-//		}
+//            l.push_back(make_pair(j, temp));
+//        }
 //
-//		while (!pq.empty())
-//		{
-//			temp = pq.top();
-//			pq.pop();
+//        while (!l.empty()) {
+//            int max = 0;
+//            pair<int, int> elem;
+//            auto f = l.front();
+//            for (auto iter : l) {
+//                int item2 = get<1>(iter);
 //
-//			if (result == temp) 
-//			{
-//				cout << count << '\n';
-//				break;
-//			}
+//                if (item2 > max) {
+//                    max = item2;
+//                    elem = iter;
+//                }
+//            }
 //
-//			count++;
-//		}
-//	}
+//            l.pop_front();
+//            if (get<1>(f) == max) {
+//                ret++;
+//
+//                if (get<0>(f) == m) {
+//                    cout << ret << '\n';
+//                    break;
+//                }
+//            } else {
+//                l.push_back(f);
+//            }
+//        }
+//    }
 //
 //
 //	return 0;

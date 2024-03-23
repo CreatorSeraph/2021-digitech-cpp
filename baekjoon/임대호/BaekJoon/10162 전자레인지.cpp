@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int 전자레인지()
+int main()
 {
 	int n, arr1[3] = { 0, }, arr2[3] = { 300,  60, 10 };
 	cin >> n;

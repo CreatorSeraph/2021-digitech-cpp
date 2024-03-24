@@ -2,7 +2,7 @@
 #include <queue>
 
 using namespace std;
-int main() {
+int 최대힙날먹나이스() {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
 	ios::sync_with_stdio(false);

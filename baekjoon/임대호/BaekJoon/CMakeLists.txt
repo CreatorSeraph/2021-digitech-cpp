@@ -82,4 +82,5 @@ add_executable(BaekJoon
         "9012 괄호.cpp"
         "9076 점수 집계.cpp"
         "9655 돌 게임.cpp"
-        "9946 단어 퍼즐.cpp")
+        "9946 단어 퍼즐.cpp"
+        "18110 solved.ac.cpp")

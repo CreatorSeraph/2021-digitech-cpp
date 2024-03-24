@@ -130,7 +130,8 @@
 				78,
 				79,
 				80,
-				81
+				81,
+				82
 			]
 		}
 	],
@@ -244,7 +245,8 @@
 				78,
 				79,
 				80,
-				81
+				81,
+				82
 			]
 		}
 	],
@@ -740,6 +742,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "11723 \uc9d1\ud569.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "1463 1\ub85c \ub9cc\ub4e4\uae30.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

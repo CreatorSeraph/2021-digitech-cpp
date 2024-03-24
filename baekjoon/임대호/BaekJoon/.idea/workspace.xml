@@ -21,7 +21,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7dbf726-62f7-4ee9-8919-584a09399a22" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/18110 solved.ac.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/18110 solved.ac.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1676 팩토리얼 0의 개수.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1676 팩토리얼 0의 개수.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1676 팩토리얼 0의 개수.dSYM/Contents/Resources/DWARF/1676 팩토리얼 0의 개수" beforeDir="false" afterPath="$PROJECT_DIR$/1676 팩토리얼 0의 개수.dSYM/Contents/Resources/DWARF/1676 팩토리얼 0의 개수" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/18110 solved.ac" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +75,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.18110 solved.ac.cpp">
+  <component name="RunManager" selected="C/C++ File.1676 팩토리얼 0의 개수.cpp">
     <configuration name="BaekJoon" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BaekJoon" TARGET_NAME="BaekJoon" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BaekJoon" RUN_TARGET_NAME="BaekJoon">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -81,6 +84,12 @@
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1676 팩토리얼 0의 개수.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Baekjoon.sln" TARGET_NAME="1676 팩토리얼 0의 개수.cpp" CONFIG_NAME="1676 팩토리얼 0의 개수.cpp">
+      <option name="sourceFile" value="$PROJECT_DIR$/1676 팩토리얼 0의 개수.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="18110 solved.ac.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Baekjoon.sln" TARGET_NAME="18110 solved.ac.cpp" CONFIG_NAME="18110 solved.ac.cpp">
@@ -98,6 +107,7 @@
     <list>
       <item itemvalue="C/C++ File.18111 마인크래프트.cpp" />
       <item itemvalue="C/C++ File.18110 solved.ac.cpp" />
+      <item itemvalue="C/C++ File.1676 팩토리얼 0의 개수.cpp" />
       <item itemvalue="CMake Application.BaekJoon" />
     </list>
   </component>
@@ -110,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699596482448</updated>
       <workItem from="1699596484576" duration="9998000" />
-      <workItem from="1711260438695" duration="2945000" />
+      <workItem from="1711260438695" duration="4883000" />
     </task>
     <servers />
   </component>

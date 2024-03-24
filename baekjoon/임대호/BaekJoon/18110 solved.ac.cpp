@@ -3,7 +3,7 @@
 #include <cmath>
 
 using namespace std;
-int main() {
+int solved_ac() {
 	cin.tie(nullptr);
 	cout.tie(nullptr);
 	ios::sync_with_stdio(false);

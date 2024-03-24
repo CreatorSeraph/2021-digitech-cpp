@@ -21,15 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7dbf726-62f7-4ee9-8919-584a09399a22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/18110 solved.ac.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-51611b2d82c9ced0befd.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-11-10T07-06-36-0330.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-BaekJoon-Debug-89772e9e30b9764a3fbb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/18110 solved.ac.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/18110 solved.ac.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699596482448</updated>
       <workItem from="1699596484576" duration="9998000" />
-      <workItem from="1711260438695" duration="2881000" />
+      <workItem from="1711260438695" duration="2945000" />
     </task>
     <servers />
   </component>

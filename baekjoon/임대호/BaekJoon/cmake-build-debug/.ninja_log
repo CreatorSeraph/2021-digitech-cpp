@@ -1,7 +1,6 @@
 # ninja log v5
 53	75	1699599977822396554	CMakeFiles/BaekJoon.dir/11403_경로_찾기.cpp.o	cdb881cfc064a297
-28	53	1699599977800712375	CMakeFiles/BaekJoon.dir/11050_이항_계수_1.cpp.o	8cf528431a903edb
-0	42	1711265774059291276	build.ninja	b6b4445bc81b3a22
+0	42	1711266605346904167	build.ninja	b6b4445bc81b3a22
 53	80	1699599977827703182	CMakeFiles/BaekJoon.dir/11404_플로이드.cpp.o	d665606d4bdc3783
 27	53	1699599977801141170	CMakeFiles/BaekJoon.dir/11004_K번째_수.cpp.o	19707122dab0ad7c
 80	102	1699599977849678864	CMakeFiles/BaekJoon.dir/11651_좌표_정렬하기2.cpp.o	748a1cd502b5958a
@@ -20,7 +19,8 @@
 120	338	1699599996668793149	CMakeFiles/BaekJoon.dir/1676_팩토리얼_0의_개수.cpp.o	460a1e2a33164f81
 39	55	1699599996387452738	CMakeFiles/BaekJoon.dir/14915_진수_변환기.cpp.o	a8778f2f2efc1b96
 22	39	1699599996370920143	CMakeFiles/BaekJoon.dir/1436_영화감독_숌.cpp.o	3334b657dbcaed9f
+1	279	1699599996610190497	CMakeFiles/BaekJoon.dir/13424_비밀_모임.cpp.o	8bcf289be31b3d48
 55	71	1699599996403431995	CMakeFiles/BaekJoon.dir/15688_수_정렬하기_5.cpp.o	6f7a20a15690a763
 104	120	1699599996452125397	CMakeFiles/BaekJoon.dir/1654_랜선_자르기.cpp.o	a6f9ee8a7762bae8
-1	279	1699599996610190497	CMakeFiles/BaekJoon.dir/13424_비밀_모임.cpp.o	8bcf289be31b3d48
+28	53	1699599977800712375	CMakeFiles/BaekJoon.dir/11050_이항_계수_1.cpp.o	8cf528431a903edb
 22	39	1699599996371259729	CMakeFiles/BaekJoon.dir/1389_케빈_베이컨의_6단계_법칙.cpp.o	24514e437cc67705

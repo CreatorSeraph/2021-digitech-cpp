@@ -84,4 +84,5 @@ add_executable(BaekJoon
         "9655 돌 게임.cpp"
         "9946 단어 퍼즐.cpp"
         "18110 solved.ac.cpp"
-        "11279 최대 힙.cpp")
+        "11279 최대 힙.cpp"
+        "11723 집합.cpp")

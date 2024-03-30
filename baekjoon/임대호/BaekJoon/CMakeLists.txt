@@ -86,4 +86,5 @@ add_executable(BaekJoon
         "18110 solved.ac.cpp"
         "11279 최대 힙.cpp"
         "11723 집합.cpp"
-        "1463 1로 만들기.cpp")
+        "1463 1로 만들기.cpp"
+        "11047 동전 0.cpp")

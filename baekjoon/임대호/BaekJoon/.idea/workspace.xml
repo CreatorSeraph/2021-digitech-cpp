@@ -21,10 +21,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7dbf726-62f7-4ee9-8919-584a09399a22" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/11047 동전 0.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1463 1로 만들기" beforeDir="false" afterPath="$PROJECT_DIR$/1463 1로 만들기" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1463 1로 만들기.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1463 1로 만들기.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1463 1로 만들기.dSYM/Contents/Resources/DWARF/1463 1로 만들기" beforeDir="false" afterPath="$PROJECT_DIR$/1463 1로 만들기.dSYM/Contents/Resources/DWARF/1463 1로 만들기" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-58a49378958c8392b464.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-03-24T08-12-50-0310.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-BaekJoon-Debug-d05db3b6516b25e0aa23.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,10 +79,21 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.1463 1로 만들기.cpp">
+  <component name="RunManager" selected="C/C++ File.11047 동전 0.cpp">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BaekJoon" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BaekJoon" TARGET_NAME="BaekJoon" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BaekJoon" RUN_TARGET_NAME="BaekJoon">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="11047 동전 0.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Baekjoon.sln" TARGET_NAME="11047 동전 0.cpp" CONFIG_NAME="11047 동전 0.cpp">
+      <option name="sourceFile" value="$PROJECT_DIR$/11047 동전 0.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="11279 최대 힙.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Baekjoon.sln" TARGET_NAME="11279 최대 힙.cpp" CONFIG_NAME="11279 최대 힙.cpp">
@@ -124,6 +139,7 @@
       <item itemvalue="C/C++ File.11279 최대 힙.cpp" />
       <item itemvalue="C/C++ File.11723 집합.cpp" />
       <item itemvalue="C/C++ File.1463 1로 만들기.cpp" />
+      <item itemvalue="C/C++ File.11047 동전 0.cpp" />
       <item itemvalue="CMake Application.BaekJoon" />
     </list>
   </component>
@@ -137,7 +153,7 @@
       <updated>1699596482448</updated>
       <workItem from="1699596484576" duration="9998000" />
       <workItem from="1711260438695" duration="9116000" />
-      <workItem from="1711774902080" duration="1782000" />
+      <workItem from="1711774902080" duration="2471000" />
     </task>
     <servers />
   </component>

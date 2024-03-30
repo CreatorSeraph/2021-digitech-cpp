@@ -90,4 +90,5 @@ add_executable(BaekJoon
         "11047 동전 0.cpp"
         "11399 ATM.cpp"
         "17219 비밀번호 찾기.cpp"
-        "1927 최소 힙.cpp")
+        "1927 최소 힙.cpp"
+        "5430 AC.cpp")

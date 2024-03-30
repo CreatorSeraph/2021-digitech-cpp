@@ -1,15 +1,45 @@
 #include <iostream>
 
 using namespace std;
-// 생각 : 2부터 N까지 돌면서 3으로 나눌 때, 2로 나눌 때, 1 빼는 것 중 얘로부터 1까지 가는 데 걸리는 수 제일 작은 거를 미리 저장해놓기.
-// 그러면 수가 커질 때마다 인덱스로 참조하면 얼마나 걸리는 지 알 수 있으니까 그거 읽어서 연산하면 되지 않을까?
-int main() {
+int 히히1로만들기를풀었다() {
     cin.tie(nullptr);
     cout.tie(nullptr);
     ios::sync_with_stdio(false);
 
     int n;
     cin >> n;
+
+    int* arr = new int[n + 1];
+
+    int time;
+    for (int i = 1; i <= n; i++) {
+        if (i == 1) {
+            arr[i] = 0;
+            continue;
+        }
+        if (i == 2 || i == 3) {
+            arr[i] = 1;
+            continue;
+        }
+
+        time = 1000000;
+
+        if (i % 3 == 0) {
+            time = arr[(int)(i / 3)] + 1;
+        }
+        if (i % 2 == 0) {
+            if (arr[(int)(i / 2)] + 1 < time) {
+                time = arr[(int)(i / 2)] + 1;
+            }
+        }
+        if (arr[i - 1] + 1 < time) {
+            time = arr[i - 1] + 1;
+        }
+
+        arr[i] = time;
+    }
+
+    cout << arr[n];
 
     return 0;
 }

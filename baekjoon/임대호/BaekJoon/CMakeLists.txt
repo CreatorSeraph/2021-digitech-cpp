@@ -92,4 +92,5 @@ add_executable(BaekJoon
         "17219 비밀번호 찾기.cpp"
         "1927 최소 힙.cpp"
         "5430 AC.cpp"
-        "11286 절댓값 힙.cpp")
+        "11286 절댓값 힙.cpp"
+        "11659 구간 합 구하기.cpp")

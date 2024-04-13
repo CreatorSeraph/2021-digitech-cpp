@@ -21,13 +21,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7dbf726-62f7-4ee9-8919-584a09399a22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/11286 절댓값 힙.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11659 구간 합 구하기.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5430 AC" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11286 절댓값 힙" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-584d423238b730112593.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-03-30T08-33-04-0803.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-BaekJoon-Debug-5e7d93bb12c4ffce148d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-55b50df54a9fc0bd539e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-04-13T04-31-38-0165.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-BaekJoon-Debug-312a9a06ba85f8afaef0.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
@@ -83,7 +83,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.11286 절댓값 힙.cpp">
+  <component name="RunManager" selected="C/C++ File.11659 구간 합 구하기.cpp">
     <configuration name="BaekJoon" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BaekJoon" TARGET_NAME="BaekJoon" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BaekJoon" RUN_TARGET_NAME="BaekJoon">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -114,6 +114,12 @@
     </configuration>
     <configuration name="11399 ATM.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Baekjoon.sln" TARGET_NAME="11399 ATM.cpp" CONFIG_NAME="11399 ATM.cpp">
       <option name="sourceFile" value="$PROJECT_DIR$/11399 ATM.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="11659 구간 합 구하기.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Baekjoon.sln" TARGET_NAME="11659 구간 합 구하기.cpp" CONFIG_NAME="11659 구간 합 구하기.cpp">
+      <option name="sourceFile" value="$PROJECT_DIR$/11659 구간 합 구하기.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -169,6 +175,7 @@
     <list>
       <item itemvalue="C/C++ File.5430 AC.cpp" />
       <item itemvalue="C/C++ File.11286 절댓값 힙.cpp" />
+      <item itemvalue="C/C++ File.11659 구간 합 구하기.cpp" />
       <item itemvalue="C/C++ File.18111 마인크래프트.cpp" />
       <item itemvalue="C/C++ File.18110 solved.ac.cpp" />
       <item itemvalue="C/C++ File.1676 팩토리얼 0의 개수.cpp" />

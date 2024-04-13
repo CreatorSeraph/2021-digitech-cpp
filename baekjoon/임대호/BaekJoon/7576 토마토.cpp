@@ -5,7 +5,7 @@
 
 using namespace std;
 
-struct Vector3 {
+struct Vector2 {
 public:
     int x, y;
 };

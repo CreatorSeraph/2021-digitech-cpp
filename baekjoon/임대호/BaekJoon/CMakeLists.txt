@@ -94,4 +94,5 @@ add_executable(BaekJoon
         "5430 AC.cpp"
         "11286 절댓값 힙.cpp"
         "11659 구간 합 구하기.cpp"
-        "2606 바이러스.cpp")
+        "2606 바이러스.cpp"
+        "7576 토마토.cpp")

@@ -59,7 +59,7 @@ public:
         return right->getRight();
     }
 
-    void deleteLeft() {
+    void deleteLeft() const {
         if (left == nullptr) {
 //            delete this;
 
@@ -77,7 +77,7 @@ public:
         }
     }
 
-    void deleteRight() {
+    void deleteRight() const {
         if (right == nullptr) {
 //            delete this;
 
@@ -107,19 +107,19 @@ public:
             head->insert(node);
     }
 
-    void clear() {
+    void clear() const {
         if (head == nullptr)
             return;
 
         head->clear();
     }
 
-    int min() {
+    [[nodiscard]] int min() const {
         Node* min = head->getLeft();
         return min->value;
     }
 
-    int max() {
+    [[nodiscard]] int max() const {
         Node* max = head->getRight();
         return max->value;
     }
@@ -167,34 +167,34 @@ class DoublePriorityQueue {
 public:
     Tree* tree;
 
-    void insert(int v) {
+    void insert(int v) const {
         Node* node = new Node();
         node->value = v;
         tree->insert(node);
     }
 
-    void clear() {
+    void clear() const {
 //        tree.clear();
         tree->head = nullptr;
     }
 
-    int min() {
+    [[nodiscard]] int min() const {
         return tree->min();
     }
 
-    int max() {
+    [[nodiscard]] int max() const {
         return tree->max();
     }
 
-    bool empty() {
-    return tree->head == nullptr;
+    [[nodiscard]] bool empty() const {
+        return tree->head == nullptr;
     }
 
-    void deleteMin() {
+    void deleteMin() const {
         tree->deleteMin();
     }
 
-    void deleteMax() {
+    void deleteMax() const {
         tree->deleteMax();
     }
 };
@@ -209,7 +209,7 @@ int main() {
     char c;
     int val;
 
-    DoublePriorityQueue* dPq = new DoublePriorityQueue();
+    auto* dPq = new DoublePriorityQueue();
     dPq->tree = new Tree();
 
     for (int i = 0; i < t; i++) {
@@ -235,8 +235,6 @@ int main() {
 
         dPq->clear();
     }
-
-    dPq = nullptr;
 
     return 0;
 }

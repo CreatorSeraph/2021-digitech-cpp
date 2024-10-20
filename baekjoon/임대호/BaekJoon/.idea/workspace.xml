@@ -21,11 +21,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7dbf726-62f7-4ee9-8919-584a09399a22" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/1240 노드사이의 거리.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-264bead2bf27fef18ada.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-04-27T08-49-31-0679.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-BaekJoon-Debug-e44c0df128d3f04a2165.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-a42782857f548ba9f121.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-04-27T08-53-53-0831.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-BaekJoon-Debug-ffdc0242c66129784935.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
@@ -83,7 +84,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.18870 좌표 압축.cpp">
+  <component name="RunManager" selected="C/C++ File.1240 노드사이의 거리.cpp">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -132,6 +133,12 @@
     </configuration>
     <configuration name="11723 집합.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Baekjoon.sln" TARGET_NAME="11723 집합.cpp" CONFIG_NAME="11723 집합.cpp">
       <option name="sourceFile" value="$PROJECT_DIR$/11723 집합.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1240 노드사이의 거리.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Baekjoon.sln" TARGET_NAME="1240 노드사이의 거리.cpp" CONFIG_NAME="1240 노드사이의 거리.cpp">
+      <option name="sourceFile" value="$PROJECT_DIR$/1240 노드사이의 거리.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -225,6 +232,7 @@
       <item itemvalue="C/C++ File.7662 이중 우선순위 큐.cpp" />
       <item itemvalue="C/C++ File.2630 색종이 만들기.cpp" />
       <item itemvalue="C/C++ File.18870 좌표 압축.cpp" />
+      <item itemvalue="C/C++ File.1240 노드사이의 거리.cpp" />
       <item itemvalue="C/C++ File.18111 마인크래프트.cpp" />
       <item itemvalue="C/C++ File.18110 solved.ac.cpp" />
       <item itemvalue="C/C++ File.1676 팩토리얼 0의 개수.cpp" />
@@ -254,6 +262,10 @@
       <workItem from="1713584917057" duration="14352000" />
       <workItem from="1713620449791" duration="1810000" />
       <workItem from="1714198167056" duration="7253000" />
+      <workItem from="1729317117231" duration="57000" />
+      <workItem from="1729317718782" duration="16000" />
+      <workItem from="1729317974552" duration="18000" />
+      <workItem from="1729319700712" duration="5493000" />
     </task>
     <servers />
   </component>

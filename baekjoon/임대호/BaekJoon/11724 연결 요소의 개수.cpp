@@ -1,44 +1,82 @@
-// 이거 플로이드 와샬로 풀 수 있을듯
-
-#include <iostream>
-#include <list>
-#include <map>
-
-using namespace std;
-
-class Point {
-public:
-    list<Point*> points;
-};
-
-int main() {
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    ios::sync_with_stdio(false);
-
-    int n, m;
-
-    cin >> n >> m;
-
-    int a, b;
-
-    map<int, Point*> points;
-
-    for (int i = 0; i < m; i++) {
-        cin >> a >> b;
-
-        if (points.find(a) == points.end())
-            points.insert(make_pair(a, new Point()));
-
-        if (points.find(b) == points.end())
-            points.insert(make_pair(b, new Point()));
-
-        points[a]->points.push_back(points[b]);
-        points[b]->points.push_back(points[a]);
-    }
-
-    while (!points.empty()) {
-    }
-
-    return 0;
-}
+//#include <iostream>
+//#include <vector>
+//#include <queue>
+//
+//using namespace std;
+//
+//class Node {
+//public:
+//    int idx;
+//    bool visited;
+//    queue<int> nodes;
+//};
+//
+//vector<Node*> nodes;
+//
+//void BfsSearch(int start);
+//
+//int connectedComponentCount = 0;
+//
+//int main() {
+//    cin.tie(nullptr);
+//    cout.tie(nullptr);
+//    ios::sync_with_stdio(false);
+//
+//    int n, m;
+//
+//    cin >> n >> m;
+//
+//    nodes.resize(n);
+//
+//    for (int i = 0; i < n + 1; i++) {
+//        Node* node = new Node();
+//        node->idx = i;
+//        node->visited = false;
+//
+//        nodes[i] = node;
+//    }
+//
+//    for (int i = 0; i < m; i++) {
+//        int a, b;
+//        cin >> a >> b;
+//
+//        nodes[a]->nodes.push(b);
+//        nodes[b]->nodes.push(a);
+//    }
+//
+//    for (int i = 1; i < n + 1; i++) {
+//        if (!nodes[i]->visited)
+//            BfsSearch(i);
+//    }
+//
+//    cout << connectedComponentCount;
+//
+//    return 0;
+//}
+//
+//void BfsSearch(int start) {
+//    queue<int> searchList;
+//    searchList.push(start);
+//
+//    while (!searchList.empty()) {
+//        int next = searchList.front();
+//        searchList.pop();
+//
+//        if (nodes[next]->visited)
+//            continue;
+//
+//        nodes[next]->visited = true;
+//
+//        while (!nodes[next]->nodes.empty()) {
+//            int child = nodes[next]->nodes.front();
+//            nodes[next]->nodes.pop();
+//
+//            if (nodes[child]->visited)
+//                continue;
+//
+//            searchList.push(child);
+//        }
+//    }
+//
+//    connectedComponentCount++;
+//}

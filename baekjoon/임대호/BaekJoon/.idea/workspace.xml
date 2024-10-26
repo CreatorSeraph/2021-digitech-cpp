@@ -21,10 +21,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a7dbf726-62f7-4ee9-8919-584a09399a22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/1260 DFS와 BFS.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-10-19T06-36-42-0951.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11724 연결 요소의 개수.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/11724 연결 요소의 개수.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1260 DFS와 BFS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1260 DFS와 BFS.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/1260 DFS와 BFS.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,8 +80,13 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ File.1260 DFS와 BFS.cpp">
+  <component name="RunManager" selected="C/C++ File.11724 연결 요소의 개수.cpp">
     <configuration name="BaekJoon" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BaekJoon" TARGET_NAME="BaekJoon" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BaekJoon" RUN_TARGET_NAME="BaekJoon">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -124,6 +129,12 @@
     </configuration>
     <configuration name="11723 집합.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Baekjoon.sln" TARGET_NAME="11723 집합.cpp" CONFIG_NAME="11723 집합.cpp">
       <option name="sourceFile" value="$PROJECT_DIR$/11723 집합.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="11724 연결 요소의 개수.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Baekjoon.sln" TARGET_NAME="11724 연결 요소의 개수.cpp" CONFIG_NAME="11724 연결 요소의 개수.cpp">
+      <option name="sourceFile" value="$PROJECT_DIR$/11724 연결 요소의 개수.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -231,6 +242,7 @@
       <item itemvalue="C/C++ File.18870 좌표 압축.cpp" />
       <item itemvalue="C/C++ File.1240 노드사이의 거리.cpp" />
       <item itemvalue="C/C++ File.1260 DFS와 BFS.cpp" />
+      <item itemvalue="C/C++ File.11724 연결 요소의 개수.cpp" />
       <item itemvalue="C/C++ File.18111 마인크래프트.cpp" />
       <item itemvalue="C/C++ File.18110 solved.ac.cpp" />
       <item itemvalue="C/C++ File.1676 팩토리얼 0의 개수.cpp" />

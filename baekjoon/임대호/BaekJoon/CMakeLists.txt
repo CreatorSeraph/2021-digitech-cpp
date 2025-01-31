@@ -106,4 +106,5 @@ add_executable(BaekJoon
         "1354 무한 수열 2.cpp"
         "1334 다음 팰린드롬 수.cpp"
         "1275 커피숍2.cpp"
-        "14427 수열과 쿼리 15.cpp")
+        "14427 수열과 쿼리 15.cpp"
+        template.cpp)

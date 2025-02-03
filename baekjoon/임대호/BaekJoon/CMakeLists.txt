@@ -108,4 +108,5 @@ add_executable(BaekJoon
         "1275 커피숍2.cpp"
         "14427 수열과 쿼리 15.cpp"
         template.cpp
-        "2042 구간 합 구하기.cpp")
+        "2042 구간 합 구하기.cpp"
+        "1021 회전하는 큐.cpp")
